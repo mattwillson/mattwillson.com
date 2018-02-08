@@ -161,7 +161,8 @@ div.hangman,
 div.rpg,
 div.trivia,
 div.rutgers,
-div.rps {
+div.rps,
+div.psychic {
     position: relative;
     padding-bottom: 40px;
     width: 274px;
@@ -173,13 +174,15 @@ div.trivia,
 div.rps {float: left;}
 
 div.rpg,
-div.rutgers {float: right;}
+div.rutgers,
+div.psychic {float: right;}
 
 #hangman,
 #rpg,
 #trivia,
 #rutgers,
-#rps {
+#rps,
+#psychic {
     position: absolute;
     z-index: 2;
     bottom: 20%;
@@ -267,7 +270,7 @@ textarea {height: 200px;}
 
     .container-contact {height: 750px;}
 
-    .container-portfolio {height: 1500px;}
+    .container-portfolio {height: 1655px;}
 
     section#bio-main,
     section#contact-main,
@@ -291,7 +294,9 @@ textarea {height: 200px;}
     div.rutgers,
     div#rutgers,
     div.rps,
-    div#rps {width: 100%;}
+    div#rps,
+    div.psychic,
+    div#psychic {width: 100%;}
 }
 
 @media screen and (max-width: 768px) {
@@ -322,7 +327,8 @@ textarea {height: 200px;}
     div#rpg,
     div#trivia,
     div#rutgers,
-    div#rps {
+    div#rps,
+    div#psychic {
         width: 100%;
     }
 
@@ -330,7 +336,8 @@ textarea {height: 200px;}
     div.rpg,
     div.trivia,
     div.rutgers,
-    div.rps {width: 47%;}
+    div.rps,
+    div.psychic {width: 47%;}
 
     input#form,
     textarea {width: 590px;}
@@ -399,7 +406,9 @@ textarea {height: 200px;}
     div.rutgers,
     div#rutgers,
     div.rps,
-    div#rps {width: 100%;}
+    div#rps,
+    div.psychic,
+    div#psychic {width: 100%;}
 
     input#form,
     textarea {width: 525px;}
