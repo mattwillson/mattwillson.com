@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>About  |  Matt Willson</title>
+    <title>Contact  |  Matt Willson</title>
     <link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css"/>
 </head>
@@ -26,21 +26,24 @@
         </div>
     </header>
     
-    <div class="container-index">
+    <div class="container-contact">
 
-        <section id="bio-main">
-            <h2>About Me</h2>
+        <section id="contact-main">
+            <h2>Contact</h2>
 
-            <img id="bio-image" src="https://placehold.it/200x200" alt="Matt Willson">
-
-            <p>
-                My name is Matt Willson. You may be able to tell by my navbar.
-                 I'm going to add a photo eventually, just need to get a "professional" shot with a nice camera!
-                I don't have a whole lot to write at the moment so consider this fluff! A little about me...I studied biochemistry at
-                North Carolina State University. I was born and raised in England so naturally I'm a huge soccer fan.
-                Liverpool FC baby! I'm loving the boot camp so far. I've always been fascinated by tech and look forward to learning more.
-            </p>
-            <br/>
+            <form>
+                <p>Name</p>
+                <input id="form" type="text" name="name" placeholder="John Smith" required>
+                <br>
+                <p>Email</p>
+                <input id="form" type="text" name="email" placeholder="example@gmail.com" required>
+                <br>
+                <p>Message</p>
+                <textarea name="message" required></textarea>
+                <br>
+                <input id="form-submit" type="submit" value="Submit">
+            </form>
+    
         </section>
 
         <aside id="connect-with-me">

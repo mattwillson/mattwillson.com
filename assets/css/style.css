@@ -3,120 +3,202 @@ body {
     margin: 0;
     width: 100%;
     height: 100%;
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
     line-height: 150%;
-    color: #777777;
-    background: #efeee7;
+    background-image: url("../images/dust_scratches.png");
 }
 
 header {
     border-bottom: solid 1px #cccccc;
     margin-bottom: 40px;
-    height: 80px;
+    height: 79px;
     width: 100%;
-    background: #ffffff;
-  }
+    background-color: #ffffff;
+}
+
+header:hover {
+    background-color: #4aaaa5;
+    color: #ffffff;
+}
+
+header:hover a.nav {
+    background-color: #4aaaa5;
+    color: #ffffff;
+}
 
 footer {
     position: fixed;
     clear: both;
+    z-index: 3;
     bottom: 0;
     width: 100%;
-    height: 60px;
-    background-color: #666666;
-    line-height: 80px;
+    height: 73px;
+    line-height: 73px;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    font-size: 12px;
     color: #cccccc;
     text-align: center;
-    font-size: 10px;
+    background-color: #666666;
     border-top: solid 7px #4aaaa5;
 }
 
-h1,
+h1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 80px;
+    line-height: 80px;
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 38px;
+    color: #ffffff;
+    text-align: center;
+    background-color: #4aaaa5;
+}
+
 h2,
 h3 {
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: #4aaaa5;
-}
-
-h2, h3 {
     padding-bottom: 25px;
     border-bottom: solid 2px #cccccc;
     margin: 0 0 25px 0;
 }
 
-h2 {
-    font-size: 34px;
-}
+h2 {font-size: 34px;}
 
-h3 {
-    font-size: 24px;
-}
+h3 {font-size: 24px;}
 
-h1 {
+img#github,
+img#linkedin,
+img#stackoverflow {
     position: absolute;
-    top: -120px;
-    left: 0;
-    width: 300px;
-    height: 80px;
-    margin: 0;
-    font-size: 38px;
-    color: #ffffff;
-    text-align: center;
-    line-height: 80px;
-    background: #4aaaa5;
-}
-
-p {
-    font-size: 20px;
-}
-
-a {
-    color: #777777;
-    text-decoration: none;
-}
-
-img {
     width: 60px;
     height: 60px;
 }
 
-.container {
+img#github {left: 0;}
+
+img#linkedin {left: 74.5px;}
+
+img#stackoverflow {right: 0;}
+
+img#portfolio {
+    position: absolute;
+    z-index: 1;
+    width: 274px;
+    height: 205px;
+}
+
+p,
+.navbar {
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    font-size: 18px;
+    color: #777777;
+}
+
+a {text-decoration: none;}
+
+a:link,
+a:visited {
+    color: #777777;
+}
+
+#index:active {color: #000000;}
+
+#portfolio-link:active {color: #000000;}
+
+#contact:active {color: #000000;}
+
+.container-header {
     position: relative;
     width: 960px;
-    height: 850px;
+    height: 80px;
     margin: 0 auto;
-  }
+}
 
-#menu {
+.container-social {
+    position: relative;
+    width: 209px;
+    height: 60px;
+}
+
+.container-index,
+.container-portfolio,
+.container-contact {
+    position: relative;
+    width: 960px;
+    margin: 0 auto;
+}
+
+.container-index,
+.container-contact {
+    height: 750px;
+}
+
+.container-portfolio {
+    height: 1010px;
+}
+
+.container2-portfolio {
+    position: relative;
+    width: 100%;
+    height: 700px;
+}
+
+.navbar {
     position: absolute;
-    top: -80px;
+    top: 0;
     right: 0;
-    width: 300px;
-    height: 50px;
+    width: 320px;
+    height: 80px;
     direction: rtl;
-    line-height: 1px;
+    line-height: 80px;
 }
 
-#index, #portfolio {
-    border-right: solid 0.5px #dddddd;
+div.hangman,
+div.rpg,
+div.trivia,
+div.rutgers,
+div.rps {
+    position: relative;
+    padding-bottom: 40px;
+    width: 274px;
+    height: 205px;
 }
 
-#index {
-    padding-right: 20px;
-}
+div.hangman,
+div.trivia,
+div.rps {float: left;}
 
-#portfolio {
-    padding: 0 20px;
-}
+div.rpg,
+div.rutgers {float: right;}
 
-#contact {
-    padding-left: 20px;
-}
-
-#social {
+#hangman,
+#rpg,
+#trivia,
+#rutgers,
+#rps {
+    position: absolute;
+    z-index: 2;
+    bottom: 20%;
+    width: 274px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 22px;
     text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #ffffff;
+    background-color: #4aaaa5;
 }
+
+#index,
+#portfolio-link {border-right: solid 0.5px #dddddd;}
+
+#index,
+#portfolio-link,
+#contact {padding: 0 20px;}
 
 #bio-main,
 #contact-main,
@@ -127,6 +209,11 @@ img {
 
 #connect-with-me {
     float: right;
+    width: 209px;
+    height: 150px;
+    padding: 30px;
+    border: solid 0.5px #dddddd;
+    background-color: #ffffff;
 }
 
 #bio-main,
@@ -136,30 +223,17 @@ img {
     padding: 40px 30px;
     border: solid 0.5px #dddddd;
     background-color: #ffffff;
-  }
-
-#bio-main {
-    height: 715px;
 }
 
-#contact-main,
-#portfolio-main {
-    height: 530px;
-}
-
-#connect-with-me {
-    width: 209px;
-    height: 150px;
-    padding: 30px;
-    border: solid 0.5px #dddddd;
-    background-color: #ffffff;
-  }
+#bio-main,
+#portfolio-main,
+#contact-main {height: auto;}
   
 #bio-image {
     width: 200px;
     height: 200px;
     margin: 0 15px 15px 0;
-  }
+}
 
 #form,
 textarea {
@@ -169,15 +243,167 @@ textarea {
     border: solid 0.5px #dddddd;
 }
 
-textarea {
-    height: 200px;
-}
+textarea {height: 200px;}
 
 #form-submit {
     width: 120px;
     height: 40px;
     font-size: 20px;
+    background-color: #4aaaa5;
     color: #ffffff;
     text-align: center;
-    background: #4aaaa5;
+}
+
+#form-submit:active {background-color: #000000;}
+
+@media screen and (max-width: 980px) {
+
+    .container-header,
+    .container-index,
+    .container-portfolio,
+    .container-contact {width: 775px;}
+
+    .container-index {height: 790px;}
+
+    .container-contact {height: 750px;}
+
+    .container-portfolio {height: 1500px;}
+
+    section#bio-main,
+    section#contact-main,
+    section#portfolio-main {width: 400px;}
+
+    input#form,
+    textarea {width: 390px;}
+
+    img#bio-image {
+        width: 100%;
+        margin: 0 0 25px 0;
+    }
+
+    img#portfolio,
+    div.hangman,
+    div#hangman,
+    div.rpg,
+    div#rpg,
+    div.trivia,
+    div#trivia,
+    div.rutgers,
+    div#rutgers,
+    div.rps,
+    div#rps {width: 100%;}
+}
+
+@media screen and (max-width: 768px) {
+
+    .container-header,
+    .container-index,
+    .container-portfolio,
+    .container-contact {
+        width: 600px;
+        padding-right: 60px;
+    }
+
+    .container-index,
+    .container-portfolio,
+    .container-contact {height: 725px;}
+    
+    section#bio-main,
+    section#contact-main,
+    section#portfolio-main {width: 100%;}
+
+    img#bio-image {
+        width: 50%;
+        margin: 0 25px 0 0;
+    }
+
+    img#portfolio,
+    div#hangman,
+    div#rpg,
+    div#trivia,
+    div#rutgers,
+    div#rps {
+        width: 100%;
+    }
+
+    div.hangman,
+    div.rpg,
+    div.trivia,
+    div.rutgers,
+    div.rps {width: 47%;}
+
+    input#form,
+    textarea {width: 590px;}
+
+    aside#connect-with-me {
+        float: left;
+        width: 100%;
+        margin: 40px 0 120px 0;
+    }
+}
+
+@media screen and (max-width: 640px) {
+
+    .container-index,
+    .container-portfolio,
+    .container-contact {
+        width: 535px;
+    }
+
+    .container-header {
+        width: 100%;
+    }
+
+    header {
+        position: static;
+    }
+
+    header:hover a.nav {
+        background-color: #ffffff;
+        color: #777777;
+    }
+
+    #index,
+    #portfolio-link,
+    #contact {padding: 0 60px;}
+
+    h1 {
+        position: relative;
+        width: 100%;
+    }
+
+    div.navbar {
+        position: relative;
+        float: right;
+        width: 100%;
+        height: 40px;
+        line-height: 40px;
+        border-bottom: solid 0.5px #dddddd;
+        margin-bottom: 19.5px;
+        background-color: #ffffff;
+        text-align: center;
+    }
+
+    img#bio-image {
+        width: 100%;
+        margin: 0 0 25px 0;
+    }
+
+    img#portfolio,
+    div.hangman,
+    div#hangman,
+    div.rpg,
+    div#rpg,
+    div.trivia,
+    div#trivia,
+    div.rutgers,
+    div#rutgers,
+    div.rps,
+    div#rps {width: 100%;}
+
+    input#form,
+    textarea {width: 525px;}
+
+    aside#connect-with-me {margin: 20px 0 100px 0;}
+
 }
