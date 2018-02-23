@@ -1,69 +1,69 @@
 body {
-    padding: 0;
-    margin: 0;
-    width: 100%;
-    height: 100%;
-    font-size: 16px;
-    line-height: 150%;
-    background-image: url("../images/dust_scratches.png");
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  font-size: 16px;
+  line-height: 150%;
+  background-image: url("../images/dust_scratches.png");
 }
 
 header {
-    border-bottom: solid 1px #cccccc;
-    margin-bottom: 40px;
-    height: 79px;
-    width: 100%;
-    background-color: #ffffff;
+  border-bottom: solid 1px #cccccc;
+  margin-bottom: 40px;
+  height: 79px;
+  width: 100%;
+  background-color: #ffffff;
 }
 
 header:hover {
-    background-color: #4aaaa5;
-    color: #ffffff;
+  background-color: #4aaaa5;
+  color: #ffffff;
 }
 
 header:hover a.nav {
-    background-color: #4aaaa5;
-    color: #ffffff;
+  background-color: #4aaaa5;
+  color: #ffffff;
 }
 
 footer {
-    position: fixed;
-    clear: both;
-    z-index: 3;
-    bottom: 0;
-    width: 100%;
-    height: 73px;
-    line-height: 73px;
-    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-    font-size: 12px;
-    color: #cccccc;
-    text-align: center;
-    background-color: #666666;
-    border-top: solid 7px #4aaaa5;
+  position: fixed;
+  clear: both;
+  z-index: 3;
+  bottom: 0;
+  width: 100%;
+  height: 73px;
+  line-height: 73px;
+  font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+  font-size: 12px;
+  color: #cccccc;
+  text-align: center;
+  background-color: #666666;
+  border-top: solid 7px #4aaaa5;
 }
 
 h1 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 300px;
-    height: 80px;
-    line-height: 80px;
-    margin: 0;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 38px;
-    color: #ffffff;
-    text-align: center;
-    background-color: #4aaaa5;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 80px;
+  line-height: 80px;
+  margin: 0;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 38px;
+  color: #ffffff;
+  text-align: center;
+  background-color: #4aaaa5;
 }
 
 h2,
 h3 {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    color: #4aaaa5;
-    padding-bottom: 25px;
-    border-bottom: solid 2px #cccccc;
-    margin: 0 0 25px 0;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: #4aaaa5;
+  padding-bottom: 25px;
+  border-bottom: solid 2px #cccccc;
+  margin: 0 0 25px 0;
 }
 
 h2 {font-size: 34px;}
@@ -73,9 +73,9 @@ h3 {font-size: 24px;}
 img#github,
 img#linkedin,
 img#stackoverflow {
-    position: absolute;
-    width: 60px;
-    height: 60px;
+  position: absolute;
+  width: 60px;
+  height: 60px;
 }
 
 img#github {left: 0;}
@@ -85,24 +85,24 @@ img#linkedin {left: 74.5px;}
 img#stackoverflow {right: 0;}
 
 img#portfolio {
-    position: absolute;
-    z-index: 1;
-    width: 274px;
-    height: 205px;
+  position: absolute;
+  z-index: 1;
+  width: 274px;
+  height: 205px;
 }
 
 p,
 .navbar {
-    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-    font-size: 18px;
-    color: #777777;
+  font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+  font-size: 18px;
+  color: #777777;
 }
 
 a {text-decoration: none;}
 
 a:link,
 a:visited {
-    color: #777777;
+  color: #777777;
 }
 
 #index:active {color: #000000;}
@@ -112,49 +112,49 @@ a:visited {
 #contact:active {color: #000000;}
 
 .container-header {
-    position: relative;
-    width: 960px;
-    height: 80px;
-    margin: 0 auto;
+  position: relative;
+  width: 960px;
+  height: 80px;
+  margin: 0 auto;
 }
 
 .container-social {
-    position: relative;
-    width: 209px;
-    height: 60px;
+  position: relative;
+  width: 209px;
+  height: 60px;
 }
 
 .container-index,
 .container-portfolio,
 .container-contact {
-    position: relative;
-    width: 960px;
-    margin: 0 auto;
+  position: relative;
+  width: 960px;
+  margin: 0 auto;
 }
 
 .container-index,
 .container-contact {
-    height: 750px;
+  height: 750px;
 }
 
 .container-portfolio {
-    height: 1010px;
+  height: 1010px;
 }
 
 .container2-portfolio {
-    position: relative;
-    width: 100%;
-    height: 700px;
+  position: relative;
+  width: 100%;
+  height: 700px;
 }
 
 .navbar {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 320px;
-    height: 80px;
-    direction: rtl;
-    line-height: 80px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 320px;
+  height: 80px;
+  direction: rtl;
+  line-height: 80px;
 }
 
 div.hangman,
@@ -163,10 +163,10 @@ div.trivia,
 div.rutgers,
 div.rps,
 div.psychic {
-    position: relative;
-    padding-bottom: 40px;
-    width: 274px;
-    height: 205px;
+  position: relative;
+  padding-bottom: 40px;
+  width: 274px;
+  height: 205px;
 }
 
 div.hangman,
@@ -183,17 +183,17 @@ div.psychic {float: right;}
 #rutgers,
 #rps,
 #psychic {
-    position: absolute;
-    z-index: 2;
-    bottom: 20%;
-    width: 274px;
-    height: 50px;
-    line-height: 50px;
-    font-size: 22px;
-    text-align: center;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    color: #ffffff;
-    background-color: #4aaaa5;
+  position: absolute;
+  z-index: 2;
+  bottom: 20%;
+  width: 274px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 22px;
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: #ffffff;
+  background-color: #4aaaa5;
 }
 
 #index,
@@ -207,212 +207,212 @@ div.psychic {float: right;}
 #contact-main,
 #portfolio-main,
 #bio-image {
-  float: left;
+float: left;
 }
 
 #connect-with-me {
-    float: right;
-    width: 209px;
-    height: 150px;
-    padding: 30px;
-    border: solid 0.5px #dddddd;
-    background-color: #ffffff;
+  float: right;
+  width: 209px;
+  height: 150px;
+  padding: 30px;
+  border: solid 0.5px #dddddd;
+  background-color: #ffffff;
 }
 
 #bio-main,
 #contact-main,
 #portfolio-main {
-    width: 589px;
-    padding: 40px 30px;
-    border: solid 0.5px #dddddd;
-    background-color: #ffffff;
+  width: 589px;
+  padding: 40px 30px;
+  border: solid 0.5px #dddddd;
+  background-color: #ffffff;
 }
 
 #bio-main,
 #portfolio-main,
 #contact-main {height: auto;}
-  
+
 #bio-image {
-    width: 200px;
-    height: 200px;
-    margin: 0 15px 15px 0;
+  width: 200px;
+  height: 200px;
+  margin: 0 15px 15px 0;
 }
 
 #form,
 textarea {
-    width: 578px;
-    padding: 10px 0 10px 10px;
-    margin: 5px 0 15px 0;
-    border: solid 0.5px #dddddd;
+  width: 578px;
+  padding: 10px 0 10px 10px;
+  margin: 5px 0 15px 0;
+  border: solid 0.5px #dddddd;
 }
 
 textarea {height: 200px;}
 
 #form-submit {
-    width: 120px;
-    height: 40px;
-    font-size: 20px;
-    background-color: #4aaaa5;
-    color: #ffffff;
-    text-align: center;
+  width: 120px;
+  height: 40px;
+  font-size: 20px;
+  background-color: #4aaaa5;
+  color: #ffffff;
+  text-align: center;
 }
 
 #form-submit:active {background-color: #000000;}
 
 @media screen and (max-width: 980px) {
 
-    .container-header,
-    .container-index,
-    .container-portfolio,
-    .container-contact {width: 775px;}
+  .container-header,
+  .container-index,
+  .container-portfolio,
+  .container-contact {width: 775px;}
 
-    .container-index {height: 790px;}
+  .container-index {height: 790px;}
 
-    .container-contact {height: 750px;}
+  .container-contact {height: 750px;}
 
-    .container-portfolio {height: 1655px;}
+  .container-portfolio {height: 1655px;}
 
-    section#bio-main,
-    section#contact-main,
-    section#portfolio-main {width: 400px;}
+  section#bio-main,
+  section#contact-main,
+  section#portfolio-main {width: 400px;}
 
-    input#form,
-    textarea {width: 390px;}
+  input#form,
+  textarea {width: 390px;}
 
-    img#bio-image {
-        width: 100%;
-        margin: 0 0 25px 0;
-    }
+  img#bio-image {
+    width: 100%;
+    margin: 0 0 25px 0;
+  }
 
-    img#portfolio,
-    div.hangman,
-    div#hangman,
-    div.rpg,
-    div#rpg,
-    div.trivia,
-    div#trivia,
-    div.rutgers,
-    div#rutgers,
-    div.rps,
-    div#rps,
-    div.psychic,
-    div#psychic {width: 100%;}
+  img#portfolio,
+  div.hangman,
+  div#hangman,
+  div.rpg,
+  div#rpg,
+  div.trivia,
+  div#trivia,
+  div.rutgers,
+  div#rutgers,
+  div.rps,
+  div#rps,
+  div.psychic,
+  div#psychic {width: 100%;}
 }
 
 @media screen and (max-width: 768px) {
 
-    .container-header,
-    .container-index,
-    .container-portfolio,
-    .container-contact {
-        width: 600px;
-        padding-right: 60px;
-    }
+  .container-header,
+  .container-index,
+  .container-portfolio,
+  .container-contact {
+    width: 600px;
+    padding-right: 60px;
+  }
 
-    .container-index,
-    .container-portfolio,
-    .container-contact {height: 725px;}
-    
-    section#bio-main,
-    section#contact-main,
-    section#portfolio-main {width: 100%;}
+  .container-index,
+  .container-portfolio,
+  .container-contact {height: 725px;}
+  
+  section#bio-main,
+  section#contact-main,
+  section#portfolio-main {width: 100%;}
 
-    img#bio-image {
-        width: 50%;
-        margin: 0 25px 0 0;
-    }
+  img#bio-image {
+    width: 50%;
+    margin: 0 25px 0 0;
+  }
 
-    img#portfolio,
-    div#hangman,
-    div#rpg,
-    div#trivia,
-    div#rutgers,
-    div#rps,
-    div#psychic {
-        width: 100%;
-    }
+  img#portfolio,
+  div#hangman,
+  div#rpg,
+  div#trivia,
+  div#rutgers,
+  div#rps,
+  div#psychic {
+    width: 100%;
+  }
 
-    div.hangman,
-    div.rpg,
-    div.trivia,
-    div.rutgers,
-    div.rps,
-    div.psychic {width: 47%;}
+  div.hangman,
+  div.rpg,
+  div.trivia,
+  div.rutgers,
+  div.rps,
+  div.psychic {width: 47%;}
 
-    input#form,
-    textarea {width: 590px;}
+  input#form,
+  textarea {width: 590px;}
 
-    aside#connect-with-me {
-        float: left;
-        width: 100%;
-        margin: 40px 0 120px 0;
-    }
+  aside#connect-with-me {
+    float: left;
+    width: 100%;
+    margin: 40px 0 120px 0;
+  }
 }
 
 @media screen and (max-width: 640px) {
 
-    .container-index,
-    .container-portfolio,
-    .container-contact {
-        width: 535px;
-    }
+  .container-index,
+  .container-portfolio,
+  .container-contact {
+    width: 535px;
+  }
 
-    .container-header {
-        width: 100%;
-    }
+  .container-header {
+    width: 100%;
+  }
 
-    header {
-        position: static;
-    }
+  header {
+    position: static;
+  }
 
-    header:hover a.nav {
-        background-color: #ffffff;
-        color: #777777;
-    }
+  header:hover a.nav {
+    background-color: #ffffff;
+    color: #777777;
+  }
 
-    #index,
-    #portfolio-link,
-    #contact {padding: 0 60px;}
+  #index,
+  #portfolio-link,
+  #contact {padding: 0 60px;}
 
-    h1 {
-        position: relative;
-        width: 100%;
-    }
+  h1 {
+    position: relative;
+    width: 100%;
+  }
 
-    div.navbar {
-        position: relative;
-        float: right;
-        width: 100%;
-        height: 40px;
-        line-height: 40px;
-        border-bottom: solid 0.5px #dddddd;
-        margin-bottom: 19.5px;
-        background-color: #ffffff;
-        text-align: center;
-    }
+  div.navbar {
+    position: relative;
+    float: right;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    border-bottom: solid 0.5px #dddddd;
+    margin-bottom: 19.5px;
+    background-color: #ffffff;
+    text-align: center;
+  }
 
-    img#bio-image {
-        width: 100%;
-        margin: 0 0 25px 0;
-    }
+  img#bio-image {
+    width: 100%;
+    margin: 0 0 25px 0;
+  }
 
-    img#portfolio,
-    div.hangman,
-    div#hangman,
-    div.rpg,
-    div#rpg,
-    div.trivia,
-    div#trivia,
-    div.rutgers,
-    div#rutgers,
-    div.rps,
-    div#rps,
-    div.psychic,
-    div#psychic {width: 100%;}
+  img#portfolio,
+  div.hangman,
+  div#hangman,
+  div.rpg,
+  div#rpg,
+  div.trivia,
+  div#trivia,
+  div.rutgers,
+  div#rutgers,
+  div.rps,
+  div#rps,
+  div.psychic,
+  div#psychic {width: 100%;}
 
-    input#form,
-    textarea {width: 525px;}
+  input#form,
+  textarea {width: 525px;}
 
-    aside#connect-with-me {margin: 20px 0 100px 0;}
+  aside#connect-with-me {margin: 20px 0 100px 0;}
 
 }
