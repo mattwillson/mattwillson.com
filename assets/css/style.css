@@ -157,7 +157,7 @@ a:visited {
   line-height: 80px;
 }
 
-div.hangman,
+div.gif,
 div.rpg,
 div.trivia,
 div.rutgers,
@@ -169,7 +169,7 @@ div.psychic {
   height: 205px;
 }
 
-div.hangman,
+div.gif,
 div.trivia,
 div.rps {float: left;}
 
@@ -177,7 +177,7 @@ div.rpg,
 div.rutgers,
 div.psychic {float: right;}
 
-#hangman,
+#gif,
 #rpg,
 #trivia,
 #rutgers,
@@ -285,8 +285,8 @@ textarea {height: 200px;}
   }
 
   img#portfolio,
-  div.hangman,
-  div#hangman,
+  div.gif,
+  div#gif,
   div.rpg,
   div#rpg,
   div.trivia,
@@ -323,7 +323,7 @@ textarea {height: 200px;}
   }
 
   img#portfolio,
-  div#hangman,
+  div#gif,
   div#rpg,
   div#trivia,
   div#rutgers,
@@ -332,7 +332,7 @@ textarea {height: 200px;}
     width: 100%;
   }
 
-  div.hangman,
+  div.gif,
   div.rpg,
   div.trivia,
   div.rutgers,
@@ -397,8 +397,8 @@ textarea {height: 200px;}
   }
 
   img#portfolio,
-  div.hangman,
-  div#hangman,
+  div.gif,
+  div#gif,
   div.rpg,
   div#rpg,
   div.trivia,
