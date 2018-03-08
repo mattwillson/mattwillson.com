@@ -161,7 +161,7 @@ div.gif,
 div.rpg,
 div.trivia,
 div.rutgers,
-div.rps,
+div.ts,
 div.psychic {
   position: relative;
   padding-bottom: 40px;
@@ -171,7 +171,7 @@ div.psychic {
 
 div.gif,
 div.trivia,
-div.rps {float: left;}
+div.ts {float: left;}
 
 div.rpg,
 div.rutgers,
@@ -181,7 +181,7 @@ div.psychic {float: right;}
 #rpg,
 #trivia,
 #rutgers,
-#rps,
+#ts,
 #psychic {
   position: absolute;
   z-index: 2;
@@ -293,8 +293,8 @@ textarea {height: 200px;}
   div#trivia,
   div.rutgers,
   div#rutgers,
-  div.rps,
-  div#rps,
+  div.ts,
+  div#ts,
   div.psychic,
   div#psychic {width: 100%;}
 }
@@ -327,7 +327,7 @@ textarea {height: 200px;}
   div#rpg,
   div#trivia,
   div#rutgers,
-  div#rps,
+  div#ts,
   div#psychic {
     width: 100%;
   }
@@ -336,7 +336,7 @@ textarea {height: 200px;}
   div.rpg,
   div.trivia,
   div.rutgers,
-  div.rps,
+  div.ts,
   div.psychic {width: 47%;}
 
   input#form,
@@ -405,8 +405,8 @@ textarea {height: 200px;}
   div#trivia,
   div.rutgers,
   div#rutgers,
-  div.rps,
-  div#rps,
+  div.ts,
+  div#ts,
   div.psychic,
   div#psychic {width: 100%;}
 
