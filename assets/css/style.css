@@ -71,8 +71,7 @@ h2 {font-size: 34px;}
 h3 {font-size: 24px;}
 
 img#github,
-img#linkedin,
-img#stackoverflow {
+img#linkedin {
   position: absolute;
   width: 60px;
   height: 60px;
@@ -80,9 +79,7 @@ img#stackoverflow {
 
 img#github {left: 0;}
 
-img#linkedin {left: 74.5px;}
-
-img#stackoverflow {right: 0;}
+img#linkedin {right: 0;}
 
 img#portfolio {
   position: absolute;
