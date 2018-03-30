@@ -157,7 +157,7 @@ a:visited {
 div.gif,
 div.rpg,
 div.trivia,
-div.rutgers,
+div.liri,
 div.ts,
 div.acc {
   position: relative;
@@ -171,13 +171,13 @@ div.trivia,
 div.ts {float: left;}
 
 div.rpg,
-div.rutgers,
+div.liri,
 div.acc {float: right;}
 
 #gif,
 #rpg,
 #trivia,
-#rutgers,
+#liri,
 #ts,
 #acc {
   position: absolute;
@@ -288,8 +288,8 @@ textarea {height: 200px;}
   div#rpg,
   div.trivia,
   div#trivia,
-  div.rutgers,
-  div#rutgers,
+  div.liri,
+  div#liri,
   div.ts,
   div#ts,
   div.acc,
@@ -323,7 +323,7 @@ textarea {height: 200px;}
   div#gif,
   div#rpg,
   div#trivia,
-  div#rutgers,
+  div#liri,
   div#ts,
   div#acc {
     width: 100%;
@@ -332,7 +332,7 @@ textarea {height: 200px;}
   div.gif,
   div.rpg,
   div.trivia,
-  div.rutgers,
+  div.liri,
   div.ts,
   div.acc {width: 47%;}
 
@@ -400,8 +400,8 @@ textarea {height: 200px;}
   div#rpg,
   div.trivia,
   div#trivia,
-  div.rutgers,
-  div#rutgers,
+  div.liri,
+  div#liri,
   div.ts,
   div#ts,
   div.acc,
