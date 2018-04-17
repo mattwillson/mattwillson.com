@@ -1,0 +1,21 @@
+div.row {
+  margin-bottom: 0;
+}
+
+div.card-panel.grey.darken-2 {
+  margin: 1rem 0 1rem 0;
+}
+
+img.preview {
+  width: 20rem;
+  height: 20rem;
+}
+
+/* img.icon {
+  width: 4rem;
+  height: 4rem;
+} */
+
+/* nav {
+  height: 5rem;
+} */

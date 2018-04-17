@@ -1,58 +1,188 @@
 <!DOCTYPE html>
-<html lang="en-us">
-
+<html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-	<!-- Custom CSS -->
-	<link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
-	<link rel="stylesheet" type="text/css" href="./assets/css/style.css"/>
+  <!-- Materialize CSS -->
+  <link
+    href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet"
+  >
+  <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css"
+    rel="stylesheet"
+  >
+  <!-- Custom CSS -->
+  <link href="css/style.css" rel="stylesheet" type="text/css"/>
 
-	<title>About | Matt Willson</title>
+  <title>Portfolio | Matt Willson</title>
 </head>
-
 <body>
-    
-	<header>
-		<div class="container-header">
 
-			<h1>Matt Willson</h1>
+  <header>
 
-			<div class="navbar">
-				<a id="index" class="nav" href="./index.html">About</a>
-				<a id="portfolio-link" class="nav" href="./portfolio.html">Portfolio</a>
-				<a id="contact" class="nav" href="./contact.html">Contact</a>
-			</div><!-- /.navbar -->
-		</div><!-- /.container-header -->
-	</header>
-    
-	<div class="container-index">
+    <nav>
+      <div class="nav-wrapper">
+        <a href="#" class="brand-logo center">Matt Willson</a>
+      </div>
+    </nav>
 
-		<section id="bio-main">
-			<h2>About Me</h2>
-			<img id="bio-image" src="https://placehold.it/200x200" alt="Matt Willson">
-		</section><!-- /#bio-main -->
+    <!-- <li><a href="https://github.com/mattwillson" title="GitHub" target="_blank">GitHub</a></li>
+    <li><a href="https://www.linkedin.com/in/matt-willson/" title="LinkedIn" target="_blank">LinkedIn</a></li> -->
+          
+    <!-- <img class="circle responsive-img hoverable icon" src="./images/github.png" alt="GitHub">
+    <img class="circle responsive-img hoverable icon" src="./images/linkedin.png" alt="LinkedIn"> -->
+        
+  </header>
 
-		<aside id="connect-with-me">
-			<h3>Connect with Me</h3>
+  <div class="container">
+    <main>
+      <div class="row">
+        <div class="col s12">
+          <div class="card-panel grey darken-2">
+            <div class="row">
+              <div class="col s12 m6">
+                <div class="card hoverable">
+                  <div class="card-image">
+                    <img src="http://via.placeholder.com/200x200" class="preview">
+                    <span class="card-title">2018 ACC Tournament Review</span>
+                    <a
+                      class="btn-floating halfway-fab waves-effect waves-light red"
+                      href="https://brain-trust-69.github.io/Project-1/"
+                      title="2018 ACC Tournament Review"
+                      target="_blank"
+                    >
+                      <i class="material-icons">add</i>
+                    </a>
+                  </div>
+                  <div class="card-content">
+                    <p>Bracketology, video highlights & game statistics.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col s12 m6">
+                <div class="card hoverable">
+                  <div class="card-image">
+                    <img src="http://via.placeholder.com/200x200" class="preview">
+                    <span class="card-title">Soccer Legends</span>
+                    <a
+                      class="btn-floating halfway-fab waves-effect waves-light red"
+                      href="https://mattwillson.github.io/Gif-Tastic/"
+                      title="Gif-Tastic"
+                      target="_blank"
+                    >
+                      <i class="material-icons">add</i>
+                    </a>
+                  </div>
+                  <div class="card-content">
+                    <p>Click on gifs to play or pause them & add your own search terms.</p>
+                  </div>
+                </div>
+              </div>
+            </div><!-- /.row -->
+            <div class="row">
+              <div class="col s12 m6">
+                <div class="card hoverable">
+                  <div class="card-image">
+                    <img src="http://via.placeholder.com/200x200" class="preview">
+                    <span class="card-title">Train Scheduler</span>
+                    <a
+                      class="btn-floating halfway-fab waves-effect waves-light red"
+                      href="https://mattwillson.github.io/Train-Scheduler/"
+                      title="Train Scheduler"
+                      target="_blank"
+                    >
+                      <i class="material-icons">add</i>
+                    </a>
+                  </div>
+                  <div class="card-content">
+                    <p>Add trains to the schedule. Powered by Firebase & Moment.js.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col s12 m6">
+                <div class="card hoverable">
+                  <div class="card-image">
+                    <img src="http://via.placeholder.com/200x200" class="preview">
+                    <span class="card-title">Geography Trivia</span>
+                    <a
+                      class="btn-floating halfway-fab waves-effect waves-light red"
+                      href="https://mattwillson.github.io/Trivia-Game/"
+                      title="Trivia Game"
+                      target="_blank"
+                    >
+                      <i class="material-icons">add</i>
+                    </a>
+                  </div>
+                  <div class="card-content">
+                    <p>Test your knowledge of British geography.</p>
+                  </div>
+                </div>
+              </div>
+            </div><!-- /.row -->
+            <div class="row">
+              <div class="col s12 m6">
+                <div class="card hoverable">
+                  <div class="card-image">
+                    <img src="http://via.placeholder.com/200x200" class="preview">
+                    <span class="card-title">Spotify Song Search</span>
+                    <a
+                      class="btn-floating halfway-fab waves-effect waves-light red"
+                      href="https://github.com/mattwillson/liri-node"
+                      title="Liri"
+                      target="_blank"
+                    >
+                      <i class="material-icons">add</i>
+                    </a>
+                  </div>
+                  <div class="card-content">
+                    <p>Search Spotify for song information using NodeJS.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col s12 m6">
+                <div class="card hoverable">
+                  <div class="card-image">
+                    <img src="http://via.placeholder.com/200x200" class="preview">
+                    <span class="card-title">Bamazon</span>
+                    <a
+                      class="btn-floating halfway-fab waves-effect waves-light red"
+                      href="https://github.com/mattwillson/bamazon"
+                      title="Bamazon"
+                      target="_blank"
+                    >
+                      <i class="material-icons">add</i>
+                    </a>
+                  </div>
+                  <div class="card-content">
+                    <p>Shop at the Bamazon storefront using MySQL & NodeJS.</p>
+                  </div>
+                </div>
+              </div>
+            </div><!-- /.row -->
+          </div>
+        </div>
+      </div><!-- /.row -->
+    </main>
+  </div><!-- /.container -->
 
-			<div class="container-social">
-				<a href="https://github.com/mattwillson" title="GitHub" target="_blank">
-					<img id="github" src="./assets/images/github.png" alt="GitHub">
-				</a>
-				<a href="https://www.linkedin.com/in/matt-willson/" title="LinkedIn" target="_blank">
-					<img id="linkedin" src="./assets/images/linkedin.png" alt="LinkedIn">
-				</a>
-			</div><!-- /.container-social -->
-		</aside><!-- /#connect-with-me -->
+  <footer class="page-footer">
+    <div class="footer-copyright">
+      <div class="container center-align">
+        © 2018 Matt Willson
+      </div>
+    </div>
+  </footer>
 
-	</div><!-- /.container-index -->
+  <!-- Materialize JS -->
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"
+  ></script>
 
-	<footer>
-		&copy; Copyright 2018 Matt Willson
-	</footer>
+  <!-- Custom JS -->
+  <script src="js/main.js"></script>
 
 </body>
 </html>
