@@ -1,13 +1,18 @@
-div.row {
+div.nav-wrapper.teal.darken-1 {
+  padding: 0 4rem;
+}
+
+div#main.row,
+div#bottom.row {
   margin-bottom: 0;
 }
 
-div.nav-wrapper.teal.darken-1 {
-  padding: 0 4rem 0 4rem;
+div.card-panel.grey.darken-1 {
+  margin: 2rem 0;
 }
 
-div.card-panel.grey.darken-1 {
-  margin: 2rem 0 2rem 0;
+.card {
+  margin: .5rem 0;
 }
 
 img.preview {
@@ -18,8 +23,4 @@ img.preview {
 /* img.icon {
   width: 4rem;
   height: 4rem;
-} */
-
-/* nav {
-  height: 5rem;
 } */
