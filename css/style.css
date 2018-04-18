@@ -2,6 +2,10 @@ div.row {
   margin-bottom: 0;
 }
 
+div.nav-wrapper.teal.darken-1 {
+  padding: 0 4rem 0 4rem;
+}
+
 div.card-panel.grey.darken-1 {
   margin: 2rem 0 2rem 0;
 }
