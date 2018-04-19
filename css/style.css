@@ -3,10 +3,11 @@ body {
 }
 
 div.nav-wrapper.teal.darken-1 {
-  padding: 0 4.5rem;
+  padding: 0 2rem;
 }
 
-.col .row {
+.col .row,
+div#main.row {
   margin: 0;
 }
 
@@ -15,12 +16,16 @@ div.col.s12 {
 }
 
 div.card-panel.grey.darken-1 {
-  margin: 1.5rem 0;
-  padding: 0.5rem;
+  margin: 2rem 0;
+  padding: 0.33rem;
 }
 
 div.card.hoverable {
-  margin: 0.5rem;
+  margin: 0.33rem;
+}
+
+footer.page-footer.teal.darken-1 {
+  padding-top: 0.66rem;
 }
 
 /* img.icon {
