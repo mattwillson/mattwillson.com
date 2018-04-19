@@ -1,26 +1,29 @@
-div.nav-wrapper.teal.darken-1 {
-  padding: 0 4rem;
+body {
+  background-color: lightgrey;
 }
 
-div#main.row,
-div#bottom.row {
-  margin-bottom: 0;
+div.nav-wrapper.teal.darken-1 {
+  padding: 0 4.5rem;
+}
+
+.col .row {
+  margin: 0;
+}
+
+div.col.s12 {
+  padding: 0;
 }
 
 div.card-panel.grey.darken-1 {
-  margin: 2rem 0;
+  margin: 1.5rem 0;
+  padding: 0.5rem;
 }
 
-.card {
-  margin: .5rem 0;
-}
-
-img.preview {
-  width: 20rem;
-  height: 20rem;
+div.card.hoverable {
+  margin: 0.5rem;
 }
 
 /* img.icon {
-  width: 4rem;
-  height: 4rem;
+  width: 4.5rem;
+  height: 4.5rem;
 } */
