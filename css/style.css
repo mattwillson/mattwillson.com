@@ -1,34 +1,29 @@
 body {
   background-image: url('../images/dust_scratches.png');
 }
-
 div.nav-wrapper.teal.darken-1 {
   padding: 0 2rem;
 }
-
 .col .row,
 div#main.row {
   margin: 0;
 }
-
 div.col.s12 {
   padding: 0;
 }
-
 div.card-panel.grey.darken-1 {
   margin: 2rem 0;
   padding: 0.33rem;
 }
-
 div.card.hoverable {
   margin: 0.33rem;
 }
-
 footer.page-footer.teal.darken-1 {
   padding-top: 0.66rem;
 }
-
 /* img.icon {
   width: 4.5rem;
   height: 4.5rem;
 } */
+
+  /* Images: Photos app > Edit > Crop > 16:9 Aspect */
