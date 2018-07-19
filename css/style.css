@@ -1,8 +1,13 @@
 body {
   background-image: url('../images/dust_scratches.png');
 }
-div.nav-wrapper.teal.darken-1 {
+div.nav-wrapper,
+div.nav-content {
   padding: 0 2rem;
+}
+span.nav-title {
+  padding: 1rem;
+  font-size: 1rem;
 }
 .col .row,
 div#main.row {
