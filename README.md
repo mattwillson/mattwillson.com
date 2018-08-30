@@ -1,1 +1,1 @@
-[Homepage](https://mattwillson.github.io/index.html)
+[Homepage](https://mattwillson.com)
