@@ -2,10 +2,12 @@
   font-size: 62.5%;
 }
 
-* {
+*,
+*::after,
+*::before {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  box-sizing: inherit;
 }
 
 body {
@@ -13,6 +15,7 @@ body {
   font-family: "Raleway", sans-serif;
   line-height: 1.8;
   padding: 3.5vh;
+  box-sizing: border-box;
 }
 
 a {
