@@ -62,8 +62,11 @@ a {
 }
 
 .logo {
-  height: 7rem;
-  margin: 3.5rem;
+  fill: #373737;
+  height: 6rem;
+  width: 6rem;
+  margin: 3rem;
+  transition: all .5s;
 }
 
 .logo:link,
@@ -73,6 +76,7 @@ a {
 }
 
 .logo:hover {
+  fill: #000000;
   transform: translateY(-.3rem);
 }
 
