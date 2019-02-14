@@ -47,7 +47,7 @@ a {
   color: #fff;
   display: block;
   font-size: 6rem;
-  font-weight: 700;
+  font-weight: 600;
   letter-spacing: 2.2rem;
   animation: moveInLeft 1s ease-out;
 }
