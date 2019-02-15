@@ -23,7 +23,7 @@ a {
   outline: none;
 }
 
-.main {
+.header {
   background-color: #707070;
   height: 94vh;
   position: relative;
@@ -163,7 +163,7 @@ a {
     padding: 0;
   }
 
-  .main {
+  .header {
     height: 100vh;
   }
 
