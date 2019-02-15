@@ -1,0 +1,26 @@
+{
+  "name": "mattwillson.github.io",
+  "version": "1.0.0",
+  "description": "Personal website",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm-run-all --parallel devserver watch:sass",
+    "devserver": "live-server",
+    "watch:sass": "node-sass sass/main.scss css/style.css -w",
+    "compile:sass": "node-sass sass/main.scss css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mattwillson/mattwillson.github.io.git"
+  },
+  "author": "Matt Willson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mattwillson/mattwillson.github.io/issues"
+  },
+  "homepage": "https://github.com/mattwillson/mattwillson.github.io#readme",
+  "devDependencies": {
+    "node-sass": "^4.11.0",
+    "npm-run-all": "^4.1.5"
+  }
+}

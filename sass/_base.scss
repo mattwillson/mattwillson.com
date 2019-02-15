@@ -1,0 +1,19 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #9e9e9e;
+  padding: 3vh;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+  line-height: 1.8;
+}
