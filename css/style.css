@@ -15,40 +15,43 @@ body {
   font-family: "Raleway", sans-serif;
   line-height: 1.8; }
 
+.container {
+  display: grid;
+  grid-template-rows: 94vh;
+  grid-row-gap: 3vh; }
+
 a {
   text-decoration: none;
   outline: none; }
 
 .header {
   background-color: #707070;
-  height: 94vh;
   position: relative; }
-
-.container {
-  width: 100%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center; }
+  .header__box {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center; }
 
 .heading-primary {
   text-transform: uppercase;
   backface-visibility: hidden;
   margin-bottom: 0; }
 
-.heading-primary-main {
+.heading-primary--main {
   color: #fff;
   display: block;
-  font-size: 6rem;
+  font-size: 7rem;
   font-weight: 600;
   letter-spacing: 2.2rem;
   animation: moveInLeft 1s ease-out; }
 
-.heading-primary-sub {
+.heading-primary--sub {
   color: #cfcfcf;
   display: block;
-  font-size: 3rem;
+  font-size: 3.5rem;
   font-weight: 400;
   letter-spacing: 1.8rem;
   animation: moveInRight 1s ease-out; }
@@ -107,10 +110,10 @@ a {
 
 /* Media queries ================================================= */
 @media (max-width: 1200px) {
-  .heading-primary-main {
+  .heading-primary--main {
     font-size: 5.2rem;
     letter-spacing: 1.9rem; }
-  .heading-primary-sub {
+  .heading-primary--sub {
     font-size: 2.6rem;
     letter-spacing: 1.55rem; }
   .logo {
@@ -122,10 +125,10 @@ a {
     padding: 0; }
   .header {
     height: 100vh; }
-  .heading-primary-main {
+  .heading-primary--main {
     font-size: 5rem;
     letter-spacing: 1rem; }
-  .heading-primary-sub {
+  .heading-primary--sub {
     font-size: 2.5rem;
     letter-spacing: 1rem; }
   .logo {
@@ -133,10 +136,10 @@ a {
     margin: 2.5rem; } }
 
 @media (max-width: 600px) {
-  .heading-primary-main {
+  .heading-primary--main {
     font-size: 3.8rem;
     letter-spacing: .5rem; }
-  .heading-primary-sub {
+  .heading-primary--sub {
     font-size: 1.9rem;
     letter-spacing: .6rem; }
   .logo {

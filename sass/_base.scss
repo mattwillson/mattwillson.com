@@ -17,3 +17,9 @@ body {
   font-family: "Raleway", sans-serif;
   line-height: 1.8;
 }
+
+.container {
+  display: grid;
+  grid-template-rows: 94vh;
+  grid-row-gap: 3vh;
+}
