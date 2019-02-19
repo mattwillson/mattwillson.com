@@ -22,4 +22,5 @@ body {
   display: grid;
   grid-template-rows: 94vh;
   grid-row-gap: 3vh;
+  grid-template-columns: repeat(9, 1fr);
 }
