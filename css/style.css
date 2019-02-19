@@ -75,6 +75,7 @@ body {
     font-weight: 400;
     letter-spacing: 1.8rem;
     margin-right: -1.8rem;
+    margin-bottom: 1.5rem;
     animation: moveInRight 1s ease-out; }
   .header__logo {
     fill: #373737;
