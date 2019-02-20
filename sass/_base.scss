@@ -8,6 +8,8 @@
 
 :root {
   font-size: 62.5%;
+  // 1 rem --> 10px
+  // 10px / 16px = 62.5%
 }
 
 body {
@@ -15,12 +17,11 @@ body {
   padding: 3vh;
   box-sizing: border-box;
   font-family: "Raleway", sans-serif;
-  line-height: 1.5;
 }
 
 .container {
   display: grid;
   grid-template-rows: 94vh;
-  grid-row-gap: 3vh;
+  row-gap: 3vh;
   grid-template-columns: repeat(9, 1fr);
 }
