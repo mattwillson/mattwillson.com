@@ -1,0 +1,27 @@
+body.container {
+  font-family: "Raleway", sans-serif;
+}
+
+.header {
+  text-transform: uppercase;
+  letter-spacing: 1.5rem;
+
+  &__main,
+  &__sub {
+    margin-right: -1.5rem; // Negate letter-spacing after last letter
+  }
+
+  &__main {
+    color: #fff;
+    font-size: 9rem;
+    font-weight: 600;
+    animation: moveInLeft 1s ease-out;
+  }
+
+  &__sub {
+    color: #cfcfcf;
+    font-size: 4.5rem;
+    font-weight: 400;
+    animation: moveInRight 1s ease-out;
+  }
+}
