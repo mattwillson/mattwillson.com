@@ -1,0 +1,55 @@
+/////////////////////////////////////////////////////////////////////
+// MEDIA QUERIES
+@mixin respond($breakpoint) {
+
+  // MAX-WIDTH
+  @if $breakpoint == laptop-l {
+    @media only screen and (max-width: 90em) { @content }; // 1440px / 16px
+  }
+
+  @if $breakpoint == laptop {
+    @media only screen and (max-width: 64em) { @content }; // 1024px / 16px
+  }
+
+  @if $breakpoint == tablet-l {
+    @media only screen and (max-width: 50em) { @content }; // 800px / 16px
+  }
+
+  @if $breakpoint == tablet-m {
+    @media only screen and (max-width: 37.5em) { @content }; // 600px / 16px
+  }
+
+  @if $breakpoint == tablet-s {
+    @media only screen and (max-width: 31.25em) { @content }; // 500px / 16px
+  }
+
+  @if $breakpoint == mobile-l {
+    @media only screen and (max-width: 26.5625em) { @content }; // 425px / 16px
+  }
+
+  @if $breakpoint == mobile-m {
+    @media only screen and (max-width: 23.4375em) { @content }; // 375px / 16px
+  }
+
+  @if $breakpoint == mobile-s {
+    @media only screen and (max-width: 20em) { @content }; // 320px / 16px
+  }
+
+  // MIN-WIDTH
+  @if $breakpoint == desktop {
+    @media only screen and (min-width: 112.5em) { @content }; // 1800px / 16px
+  }
+
+  // MAX-HEIGHT
+  @if $breakpoint == tablet-landscape {
+    @media only screen and (max-height: 35em) { @content }; // 560px / 16px
+  }
+
+  @if $breakpoint == mobile-landscape {
+    @media only screen and (max-height: 22.5em) { @content }; // 360px / 16px
+  }
+
+  @if $breakpoint == mobile-xs {
+    @media only screen and (max-height: 20em) and (max-width: 20em) { @content }; // 320px / 16px
+  }
+}

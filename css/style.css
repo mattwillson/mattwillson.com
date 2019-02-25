@@ -35,6 +35,42 @@
 
 :root {
   font-size: 62.5%; }
+  @media only screen and (max-width: 90em) {
+    :root {
+      font-size: 56.25%; } }
+  @media only screen and (max-width: 64em) {
+    :root {
+      font-size: 43.75%; } }
+  @media only screen and (max-width: 50em) {
+    :root {
+      font-size: 56.25%; } }
+  @media only screen and (max-width: 37.5em) {
+    :root {
+      font-size: 50%; } }
+  @media only screen and (max-width: 31.25em) {
+    :root {
+      font-size: 43.75%; } }
+  @media only screen and (max-width: 26.5625em) {
+    :root {
+      font-size: 37.5%; } }
+  @media only screen and (max-width: 23.4375em) {
+    :root {
+      font-size: 31.25%; } }
+  @media only screen and (max-width: 20em) {
+    :root {
+      font-size: 25%; } }
+  @media only screen and (min-width: 112.5em) {
+    :root {
+      font-size: 75%; } }
+  @media only screen and (max-height: 35em) {
+    :root {
+      font-size: 37.5%; } }
+  @media only screen and (max-height: 22.5em) {
+    :root {
+      font-size: 31.25%; } }
+  @media only screen and (max-height: 20em) and (max-width: 20em) {
+    :root {
+      font-size: 18.75%; } }
 
 body.container {
   box-sizing: border-box;
@@ -44,6 +80,10 @@ body.container {
   grid-template-rows: 94vh;
   row-gap: 3vh;
   grid-template-columns: repeat(9, 1fr); }
+  @media only screen and (max-width: 50em) {
+    body.container {
+      padding: 0;
+      grid-template-rows: 100vh; } }
 
 ::selection {
   background-color: #cfcfcf;
@@ -80,9 +120,20 @@ body.container {
   .header__main {
     grid-row: 4 / 5;
     grid-column: 1 / -1; }
+    @media only screen and (max-width: 50em) {
+      .header__main {
+        grid-row: 2 / 3;
+        grid-column: 2 / 9; } }
   .header__sub {
     grid-row: 5 / 6;
     grid-column: 1 / -1; }
+    @media only screen and (max-width: 50em) {
+      .header__sub {
+        grid-row: 3 / 4;
+        grid-column: 2 / 9; } }
+    @media only screen and (max-height: 20em) and (max-width: 20em) {
+      .header__sub {
+        grid-column: 3 / 8; } }
   .header__logo {
     fill: #373737;
     height: 9rem;
@@ -99,11 +150,26 @@ body.container {
   .header__github {
     grid-row: 6 / 7;
     grid-column: 4 / 5; }
+    @media only screen and (max-width: 50em) {
+      .header__github {
+        grid-row: 4 / 5;
+        grid-column: 3 / 4; } }
   .header__instagram {
     grid-row: 6 / 7;
     grid-column: 5 / 6; }
+    @media only screen and (max-width: 50em) {
+      .header__instagram {
+        grid-row: 4 / 5; } }
   .header__linkedin {
     grid-row: 6 / 7;
     grid-column: 6 / 7; }
+    @media only screen and (max-width: 50em) {
+      .header__linkedin {
+        grid-row: 4 / 5;
+        grid-column: 7 / 8; } }
   .header a {
     outline-color: #fff; }
+  @media only screen and (max-width: 50em) {
+    .header {
+      grid-template-rows: 1fr min-content min-content min-content 1fr;
+      row-gap: 10%; } }

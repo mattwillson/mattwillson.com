@@ -12,12 +12,25 @@
   &__main {
     grid-row: 4 / 5;
     grid-column: 1 / -1;
+
+    @include respond(tablet-l) {
+      grid-row: 2 / 3;
+      grid-column: 2 / 9;
     }
+  }
 
   &__sub {
     grid-row: 5 / 6;
     grid-column: 1 / -1;
 
+    @include respond(tablet-l) {
+      grid-row: 3 / 4;
+      grid-column: 2 / 9;
+    }
+
+    @include respond(mobile-xs) {
+      grid-column: 3 / 8;
+    }
   }
 
   &__logo {
@@ -42,19 +55,38 @@
   &__github {
     grid-row: 6 / 7;
     grid-column: 4 / 5;
+
+    @include respond(tablet-l) {
+      grid-row: 4 / 5;
+      grid-column: 3 / 4;
+    }
   }
 
   &__instagram {
     grid-row: 6 / 7;
     grid-column: 5 / 6;
+
+    @include respond(tablet-l) {
+      grid-row: 4 / 5;
+    }
   }
 
   &__linkedin {
     grid-row: 6 / 7;
     grid-column: 6 / 7;
+
+    @include respond(tablet-l) {
+      grid-row: 4 / 5;
+      grid-column: 7 / 8;
+    }
   }
 
   & a {
     outline-color: #fff;
+  }
+
+  @include respond(tablet-l) {
+    grid-template-rows: 1fr min-content min-content min-content 1fr;
+    row-gap: 10%;
   }
 }
