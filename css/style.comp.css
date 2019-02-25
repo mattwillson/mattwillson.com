@@ -39,8 +39,11 @@ body.container {
   background-color: #9e9e9e;
   display: grid;
   grid-template-rows: 94vh;
-  row-gap: 3vh;
-  grid-template-columns: repeat(9, 1fr); }
+  grid-template-columns: repeat(9, 1fr);
+  grid-row-gap: 3vh; }
+  @supports (row-gap: 3vh) {
+    body.container {
+      row-gap: 3vh; } }
   @media only screen and (max-width: 50em) {
     body.container {
       padding: 0;
@@ -172,4 +175,7 @@ body.container {
   @media only screen and (max-width: 50em) {
     .header {
       grid-template-rows: 1fr min-content min-content min-content 1fr;
-      row-gap: 10%; } }
+      grid-row-gap: 10vh; }
+      @supports (row-gap: 10vh) {
+        .header {
+          row-gap: 10vh; } } }

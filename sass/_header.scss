@@ -87,6 +87,10 @@
 
   @include respond(tablet-l) {
     grid-template-rows: 1fr min-content min-content min-content 1fr;
-    row-gap: 10%;
+    grid-row-gap: 10vh;
+
+    @supports (row-gap: 10vh) {
+      row-gap: 10vh;      
+    }
   }
 }
