@@ -120,6 +120,8 @@ body.container {
   justify-items: center;
   align-items: center;
   text-align: center; }
+  .header a {
+    outline-color: #fff; }
   .header__main {
     grid-row: 4 / 5;
     grid-column: 1 / -1; }
@@ -143,8 +145,7 @@ body.container {
     width: 9rem;
     transition: all .5s;
     animation: moveInBottom .5s ease-out .75s;
-    animation-fill-mode: backwards;
-    display: grid; }
+    animation-fill-mode: backwards; }
     .header__logo:hover {
       fill: #000;
       transform: translateY(-0.3rem); }
@@ -170,8 +171,6 @@ body.container {
       .header__linkedin {
         grid-row: 4 / 5;
         grid-column: 7 / 8; } }
-  .header a {
-    outline-color: #fff; }
   @media only screen and (max-width: 50em) {
     .header {
       grid-template-rows: 1fr min-content min-content min-content 1fr;

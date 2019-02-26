@@ -44,7 +44,6 @@
     transition: all .5s;
     animation: moveInBottom .5s ease-out .75s;
     animation-fill-mode: backwards;
-    display: grid; // Centers icons vertically
 
     &:hover {
       fill: #000;
