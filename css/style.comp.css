@@ -101,7 +101,8 @@ body.container {
 
 .header {
   text-transform: uppercase;
-  letter-spacing: 1.5rem; }
+  letter-spacing: 1.5rem;
+  line-height: 1; }
   .header__main, .header__sub {
     margin-right: -1.5rem; }
   .header__main {
@@ -165,11 +166,14 @@ body.container {
       display: grid;
       justify-items: center;
       align-items: center;
-      grid-template-rows: 1fr repeat(3, 14rem) 1fr;
-      grid-template-columns: repeat(9, 1fr); }
+      grid-template-rows: 1fr repeat(3, min-content) 1fr;
+      grid-template-columns: repeat(9, 1fr);
+      grid-row-gap: 8vh; }
+      @supports (row-gap: 8vh) {
+        .header__box {
+          row-gap: 8vh; } }
       @media only screen and (max-width: 50em) {
         .header__box {
-          grid-template-rows: 1fr repeat(3, min-content) 1fr;
           grid-row-gap: 10vh; }
           @supports (row-gap: 10vh) {
             .header__box {
