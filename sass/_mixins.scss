@@ -3,23 +3,23 @@
 @mixin respond($breakpoint) {
 
   // MAX-WIDTH
-  @if $breakpoint == laptop-l {
+  @if $breakpoint == laptop {
     @media only screen and (max-width: 90em) { @content }; // 1440px / 16px
   }
 
-  @if $breakpoint == laptop {
+  @if $breakpoint == tablet-l {
     @media only screen and (max-width: 64em) { @content }; // 1024px / 16px
   }
 
-  @if $breakpoint == tablet-l {
+  @if $breakpoint == tablet-m {
     @media only screen and (max-width: 50em) { @content }; // 800px / 16px
   }
 
-  @if $breakpoint == tablet-m {
+  @if $breakpoint == tablet-s {
     @media only screen and (max-width: 37.5em) { @content }; // 600px / 16px
   }
 
-  @if $breakpoint == tablet-s {
+  @if $breakpoint == mobile-xl {
     @media only screen and (max-width: 31.25em) { @content }; // 500px / 16px
   }
 

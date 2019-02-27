@@ -23,7 +23,7 @@ body.container {
     }
   }
 
-  @include respond(tablet-l) {
+  @include respond(tablet-m) {
     padding: 0;
 
     @supports (display: grid) {
@@ -42,23 +42,23 @@ body.container {
   // 1 rem --> 10 px
 
   // MAX-WIDTH
-  @include respond(laptop-l) {
-    font-size: 56.25%; // 9px / 16px
-  }
-
   @include respond(laptop) {
-    font-size: 43.75%; // 7px / 16px
+    font-size: 56.25%; // 9px / 16px
   }
 
   @include respond(tablet-l) {
-    font-size: 56.25%; // 9px / 16px
+    font-size: 43.75%; // 7px / 16px
   }
 
   @include respond(tablet-m) {
-    font-size: 50%; // 8px / 16px
+    font-size: 56.25%; // 9px / 16px
   }
 
   @include respond(tablet-s) {
+    font-size: 50%; // 8px / 16px
+  }
+
+  @include respond(mobile-xl) {
     font-size: 43.75%; // 7px / 16px    
   }
 
