@@ -23,10 +23,10 @@ body.container {
     font-size: 4.5rem;
     font-weight: 400;
     animation: moveInRight 1s ease-out;
+    margin: 10vh 0; // Older browsers
 
-    // Older browsers
-    @supports not (display: grid) {
-      margin: 10vh 0;
+    @supports (display: grid) {
+      margin: 0;
     }
   }
 }

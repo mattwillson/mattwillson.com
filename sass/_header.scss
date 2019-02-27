@@ -1,108 +1,20 @@
+// ALL BROWSERS /////////////////////////////////////////////////////
 .header {
   background-color: #707070;
   text-align: center;
-  grid-column: 1 / -1;
 
-  // Older browsers
-  @supports not (display: grid) {
-    height: 94vh;
-    position: relative;
-
-    @include respond(tablet-l) {
-      height: 100vh;
-    }
-
-    &__box {
-      width: 100%;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-
-      @include respond(tablet-l) {
-        width: 90%;
-      }
-    }
-  }
-
-  &__box {
-    height: 100%;
-    display: grid;
-    grid-template-rows: repeat(3, 1fr) 14rem 14rem 14rem repeat(3, 1fr);
-    grid-template-columns: repeat(9, 1fr);
-    justify-items: center;
-    align-items: center;
-
-    @include respond(tablet-l) {
-      grid-template-rows: 1fr min-content min-content min-content 1fr;
-      grid-row-gap: 10vh;
-  
-      @supports (row-gap: 10vh) {
-        row-gap: 10vh;      
-      }
-    }
-  }
-
-  &__main {
-    grid-row: 4 / 5;
-    grid-column: 1 / -1;
-
-    @include respond(tablet-l) {
-      grid-row: 2 / 3;
-      grid-column: 2 / 9;
-    }
-  }
-
-  &__sub {
-    grid-row: 5 / 6;
-    grid-column: 1 / -1;
-
-    @include respond(tablet-l) {
-      grid-row: 3 / 4;
-      grid-column: 2 / 9;
-    }
-
-    @include respond(mobile-xs) {
-      grid-column: 3 / 8;
-    }
-  }
-
-  &__github {
-    grid-row: 6 / 7;
-    grid-column: 4 / 5;
-
-    @include respond(tablet-l) {
-      grid-row: 4 / 5;
-      grid-column: 3 / 4;
-    }
-  }
-
-  &__instagram {
-    grid-row: 6 / 7;
-    grid-column: 5 / 6;
-
-    @include respond(tablet-l) {
-      grid-row: 4 / 5;
-    }
-  }
-
-  &__linkedin {
-    grid-row: 6 / 7;
-    grid-column: 6 / 7;
-
-    @include respond(tablet-l) {
-      grid-row: 4 / 5;
-      grid-column: 7 / 8;
-    }
+  a {
+    outline-color: #fff;
+    text-decoration: none;
   }
 
   &__logo {
     fill: #373737;
-    height: 9rem;
     width: 9rem;
-    transition: all .5s;
+    height: 9rem;
     animation: moveInBottom .5s ease-out .75s;
     animation-fill-mode: backwards;
+    transition: all .5s;
 
     &:hover {
       fill: #000;
@@ -113,9 +25,105 @@
       transform: translateY(-.1rem);
     }
   }
+}
 
-  a {
-    outline-color: #fff;
-    text-decoration: none; // Older browsers
+// OLDER BROWSERS ///////////////////////////////////////////////////
+.header {
+  position: relative;  
+  height: 94vh;
+
+  @include respond(tablet-l) {
+    height: 100vh;
+  }
+
+  &__box {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    @include respond(tablet-l) {
+      width: 90%;
+    }
+  }
+}
+
+// NEWER BROWSERS ///////////////////////////////////////////////////
+@supports (display: grid) {
+  .header {
+    position: initial;
+    grid-column: 1 / -1;
+
+    &__box {
+      height: 100%;
+      display: grid;
+      grid-template-rows: repeat(3, 1fr) 14rem 14rem 14rem repeat(3, 1fr);
+      grid-template-columns: repeat(9, 1fr);
+      justify-items: center;
+      align-items: center;
+
+      @include respond(tablet-l) {
+        grid-template-rows: 1fr min-content min-content min-content 1fr;
+        grid-row-gap: 10vh;
+    
+        @supports (row-gap: 10vh) {
+          row-gap: 10vh;      
+        }
+      }
+    }
+
+    &__main {
+      grid-row: 4 / 5;
+      grid-column: 1 / -1;
+
+      @include respond(tablet-l) {
+        grid-row: 2 / 3;
+        grid-column: 2 / 9;
+      }
+    }
+
+    &__sub {
+      grid-row: 5 / 6;
+      grid-column: 1 / -1;
+
+      @include respond(tablet-l) {
+        grid-row: 3 / 4;
+        grid-column: 2 / 9;
+      }
+
+      @include respond(mobile-xs) {
+        grid-column: 3 / 8;
+      }
+    }
+
+    &__github {
+      grid-row: 6 / 7;
+      grid-column: 4 / 5;
+
+      @include respond(tablet-l) {
+        grid-row: 4 / 5;
+        grid-column: 3 / 4;
+      }
+    }
+
+    &__instagram {
+      grid-row: 6 / 7;
+      grid-column: 5 / 6;
+
+      @include respond(tablet-l) {
+        grid-row: 4 / 5;
+      }
+    }
+
+    &__linkedin {
+      grid-row: 6 / 7;
+      grid-column: 6 / 7;
+
+      @include respond(tablet-l) {
+        grid-row: 4 / 5;
+        grid-column: 7 / 8;
+      }
+    }
   }
 }
