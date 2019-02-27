@@ -42,7 +42,6 @@ body.container {
     body.container {
       display: grid;
       grid-template-rows: 94vh;
-      grid-template-columns: repeat(9, 1fr);
       grid-row-gap: 3vh; }
       @supports (row-gap: 3vh) {
         body.container {
@@ -164,51 +163,44 @@ body.container {
     .header__box {
       height: 100%;
       display: grid;
-      grid-template-rows: repeat(3, 1fr) 14rem 14rem 14rem repeat(3, 1fr);
-      grid-template-columns: repeat(9, 1fr);
       justify-items: center;
-      align-items: center; }
+      align-items: center;
+      grid-template-rows: 1fr repeat(3, 14rem) 1fr;
+      grid-template-columns: repeat(9, 1fr); }
       @media only screen and (max-width: 50em) {
         .header__box {
-          grid-template-rows: 1fr min-content min-content min-content 1fr;
+          grid-template-rows: 1fr repeat(3, min-content) 1fr;
           grid-row-gap: 10vh; }
           @supports (row-gap: 10vh) {
             .header__box {
               row-gap: 10vh; } } }
     .header__main {
-      grid-row: 4 / 5;
+      grid-row: 2 / 3;
       grid-column: 1 / -1; }
       @media only screen and (max-width: 50em) {
         .header__main {
-          grid-row: 2 / 3;
           grid-column: 2 / 9; } }
     .header__sub {
-      grid-row: 5 / 6;
+      grid-row: 3 / 4;
       grid-column: 1 / -1; }
       @media only screen and (max-width: 50em) {
         .header__sub {
-          grid-row: 3 / 4;
           grid-column: 2 / 9; } }
       @media only screen and (max-height: 20em) and (max-width: 20em) {
         .header__sub {
           grid-column: 3 / 8; } }
     .header__github {
-      grid-row: 6 / 7;
+      grid-row: 4 / 5;
       grid-column: 4 / 5; }
       @media only screen and (max-width: 50em) {
         .header__github {
-          grid-row: 4 / 5;
           grid-column: 3 / 4; } }
     .header__instagram {
-      grid-row: 6 / 7;
+      grid-row: 4 / 5;
       grid-column: 5 / 6; }
-      @media only screen and (max-width: 50em) {
-        .header__instagram {
-          grid-row: 4 / 5; } }
     .header__linkedin {
-      grid-row: 6 / 7;
+      grid-row: 4 / 5;
       grid-column: 6 / 7; }
       @media only screen and (max-width: 50em) {
         .header__linkedin {
-          grid-row: 4 / 5;
           grid-column: 7 / 8; } } }
