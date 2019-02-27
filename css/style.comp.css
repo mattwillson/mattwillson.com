@@ -115,10 +115,12 @@ body.container {
     font-size: 4.5rem;
     font-weight: 400;
     animation: moveInRight 1s ease-out;
-    margin: 10vh 0; }
+    margin-top: 10vh;
+    margin-bottom: 10vh; }
     @supports (display: grid) {
       .header__sub {
-        margin: 0; } }
+        margin-top: 0;
+        margin-bottom: 0; } }
 
 .header {
   background-color: #707070;
