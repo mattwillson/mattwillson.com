@@ -1,24 +1,20 @@
-@keyframes moveInLeft {
+@keyframes fadeInLeft {
   0% {
     opacity: 0;
     transform: translateX(-10rem); }
-  80% {
-    transform: translateX(1rem); }
   100% {
     opacity: 1;
     transform: translate(0); } }
 
-@keyframes moveInRight {
+@keyframes fadeInRight {
   0% {
     opacity: 0;
     transform: translateX(10rem); }
-  80% {
-    transform: translateX(-1rem); }
   100% {
     opacity: 1;
     transform: translate(0); } }
 
-@keyframes moveInBottom {
+@keyframes fadeInBottom {
   0% {
     opacity: 0;
     transform: translateY(3rem); }
@@ -106,12 +102,12 @@ body.container {
     color: #fff;
     font-size: 9rem;
     font-weight: 600;
-    animation: moveInLeft 1s ease-out; }
+    animation: fadeInLeft 1s ease-out; }
   .header__sub {
     color: #cfcfcf;
     font-size: 4.5rem;
     font-weight: 400;
-    animation: moveInRight 1s ease-out;
+    animation: fadeInRight 1s ease-out;
     margin-top: 10vh;
     margin-bottom: 10vh; }
     @supports (display: grid) {
@@ -129,7 +125,7 @@ body.container {
     fill: #373737;
     width: 9rem;
     height: 9rem;
-    animation: moveInBottom .5s ease-out .75s;
+    animation: fadeInBottom .5s ease-out .75s;
     animation-fill-mode: backwards;
     transition: all .5s; }
     .header__logo:hover {
