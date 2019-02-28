@@ -18,14 +18,14 @@ body.container {
 
   &__main {
     color: #fff;
-    font-size: 9rem;
+    font-size: 8rem;
     font-weight: 600;
     animation: fadeInLeft 1s ease-out;
   }
 
   &__sub {
     color: #cfcfcf;
-    font-size: 4.5rem;
+    font-size: 4rem;
     font-weight: 400;
     animation: fadeInRight 1s ease-out;
     margin-top: 10vh; // Older browsers
