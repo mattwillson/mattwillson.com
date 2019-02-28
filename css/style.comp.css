@@ -59,12 +59,6 @@ body.container {
 
 :root {
   font-size: 62.5%; }
-  @media only screen and (max-width: 90em) {
-    :root {
-      font-size: 56.25%; } }
-  @media only screen and (max-width: 64em) {
-    :root {
-      font-size: 43.75%; } }
   @media only screen and (max-width: 50em) {
     :root {
       font-size: 56.25%; } }
@@ -103,6 +97,9 @@ body.container {
   text-transform: uppercase;
   letter-spacing: 1.5rem;
   line-height: 1; }
+  @media only screen and (max-width: 64em) {
+    .header {
+      line-height: 1.2; } }
   .header__main, .header__sub {
     margin-right: -1.5rem; }
   .header__main {
@@ -153,9 +150,6 @@ body.container {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%); }
-    @media only screen and (max-width: 50em) {
-      .header__box {
-        width: 90%; } }
 
 @supports (display: grid) {
   .header {
@@ -172,25 +166,16 @@ body.container {
       @supports (row-gap: 8vh) {
         .header__box {
           row-gap: 8vh; } }
-      @media only screen and (max-width: 50em) {
-        .header__box {
-          grid-row-gap: 10vh; }
-          @supports (row-gap: 10vh) {
-            .header__box {
-              row-gap: 10vh; } } }
     .header__main {
       grid-row: 2 / 3;
       grid-column: 1 / -1; }
-      @media only screen and (max-width: 50em) {
+      @media only screen and (max-width: 64em) {
         .header__main {
-          grid-column: 2 / 9; } }
+          grid-column: 3 / 8; } }
     .header__sub {
       grid-row: 3 / 4;
       grid-column: 1 / -1; }
-      @media only screen and (max-width: 50em) {
-        .header__sub {
-          grid-column: 2 / 9; } }
-      @media only screen and (max-height: 20em) and (max-width: 20em) {
+      @media only screen and (max-width: 64em) {
         .header__sub {
           grid-column: 3 / 8; } }
     .header__github {

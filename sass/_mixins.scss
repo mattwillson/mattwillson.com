@@ -3,10 +3,6 @@
 @mixin respond($breakpoint) {
 
   // MAX-WIDTH
-  @if $breakpoint == laptop {
-    @media only screen and (max-width: 90em) { @content }; // 1440px / 16px
-  }
-
   @if $breakpoint == tablet-l {
     @media only screen and (max-width: 64em) { @content }; // 1024px / 16px
   }

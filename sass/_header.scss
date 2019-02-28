@@ -43,9 +43,9 @@
     left: 50%;
     transform: translate(-50%, -50%);
 
-    @include respond(tablet-m) {
-      width: 90%;
-    }
+    // @include respond(tablet-l) {
+    //   width: 90%;
+    // }
   }
 }
 
@@ -67,22 +67,14 @@
       @supports (row-gap: 8vh) {
         row-gap: 8vh;      
       }
-
-      @include respond(tablet-m) {
-        grid-row-gap: 10vh;
-    
-        @supports (row-gap: 10vh) {
-          row-gap: 10vh;      
-        }
-      }
     }
 
     &__main {
       grid-row: 2 / 3;
       grid-column: 1 / -1;
 
-      @include respond(tablet-m) {
-        grid-column: 2 / 9;
+      @include respond(tablet-l) {
+        grid-column: 3 / 8;
       }
     }
 
@@ -90,11 +82,7 @@
       grid-row: 3 / 4;
       grid-column: 1 / -1;
 
-      @include respond(tablet-m) {
-        grid-column: 2 / 9;
-      }
-
-      @include respond(mobile-xs) {
+      @include respond(tablet-l) {
         grid-column: 3 / 8;
       }
     }

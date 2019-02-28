@@ -41,14 +41,6 @@ body.container {
   // 1 rem --> 10 px
 
   // MAX-WIDTH
-  @include respond(laptop) {
-    font-size: 56.25%; // 9px / 16px
-  }
-
-  @include respond(tablet-l) {
-    font-size: 43.75%; // 7px / 16px
-  }
-
   @include respond(tablet-m) {
     font-size: 56.25%; // 9px / 16px
   }

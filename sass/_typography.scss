@@ -7,6 +7,10 @@ body.container {
   letter-spacing: 1.5rem;
   line-height: 1;
 
+  @include respond(tablet-l) {
+    line-height: 1.2;
+  }
+
   &__main,
   &__sub {
     margin-right: -1.5rem; // Negate letter-spacing after last letter
