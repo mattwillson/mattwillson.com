@@ -1,0 +1,32 @@
+.splash {
+  background-color: $color-primary;
+  color: $color-white;
+  padding: 4rem;
+
+  &__text {
+    max-width: 29.5rem;
+    padding-right: 4rem;
+
+    @include respond(tablet) {
+      padding-right: 0;
+    }
+  }
+
+  &:hover {
+    background-color: $color-secondary;
+  }
+
+  @include respond(tablet) {
+    padding-top: 8rem;
+    padding-right: 0;
+    padding-bottom: 8rem;
+  }
+
+  @include respond(laptop) {
+    padding-left: 14rem;
+  }
+
+  @include respond(desktop) {
+    padding-left: 40rem;
+  }
+}

@@ -1,0 +1,60 @@
+.navbar {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+
+  &__icon-box {
+    display: flex;
+    flex-direction: row;
+
+    & a,
+    & svg {
+      // same dimensions as font-size
+      width: 3rem;
+      height: 3rem;
+    }
+
+    @include respond(tablet) {
+      display: none;
+    }
+  }
+
+  &__icon {
+    fill: $color-black;
+
+    &:hover {
+      fill: $color-primary;
+    }
+
+    &:active {
+      fill: $color-secondary;
+    }
+  }
+
+  &__link-box {
+    display: none;
+
+    @include respond(tablet) {
+      display: flex;
+    }
+  }
+
+  @include respond(tablet) {
+    justify-content: flex-start;
+    padding-right: 0;
+    padding-left: 4rem;
+  }
+
+  @include respond(laptop) {
+    padding-left: 14rem;
+  }
+
+  @include respond(desktop) {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    padding-left: 40rem;
+  }
+}
