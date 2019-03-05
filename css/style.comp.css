@@ -141,4 +141,5 @@ header {
   z-index: 10;
   position: relative;
   background-color: #fff;
+  transform: translate3d(0, 0, 0);
   height: 1500px; }
