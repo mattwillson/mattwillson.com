@@ -7,8 +7,8 @@
   padding: 4rem;
 
   &__text {
-    max-width: 29.5rem;
-    padding-right: 4rem;
+    max-width: 30rem;
+    padding-right: 3rem;
 
     @include respond(tablet) {
       padding-right: 0;
