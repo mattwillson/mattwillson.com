@@ -62,6 +62,39 @@ body {
   .navbar__link-box > a:active {
     color: #F18B60; }
 
+.splash {
+  z-index: 1;
+  position: sticky;
+  top: 0;
+  background-color: #8B0000;
+  color: #fff;
+  padding: 4rem; }
+  .splash__text {
+    max-width: 29.5rem;
+    padding-right: 4rem; }
+    @media only screen and (min-width: 53em) {
+      .splash__text {
+        padding-right: 0; } }
+  .splash:hover {
+    background-color: #F18B60; }
+  @media only screen and (min-width: 53em) {
+    .splash {
+      padding-top: 8rem;
+      padding-right: 0;
+      padding-bottom: 8rem; } }
+  @media only screen and (min-width: 69em) {
+    .splash {
+      padding-left: 14rem; } }
+  @media only screen and (min-width: 106em) {
+    .splash {
+      padding-left: 40rem; } }
+
+header {
+  z-index: 20;
+  position: sticky;
+  top: 0;
+  background-color: #fff; }
+
 .navbar {
   display: flex;
   flex-direction: row;
@@ -104,26 +137,8 @@ body {
       padding-bottom: 4rem;
       padding-left: 40rem; } }
 
-.splash {
-  background-color: #8B0000;
-  color: #fff;
-  padding: 4rem; }
-  .splash__text {
-    max-width: 29.5rem;
-    padding-right: 4rem; }
-    @media only screen and (min-width: 53em) {
-      .splash__text {
-        padding-right: 0; } }
-  .splash:hover {
-    background-color: #F18B60; }
-  @media only screen and (min-width: 53em) {
-    .splash {
-      padding-top: 8rem;
-      padding-right: 0;
-      padding-bottom: 8rem; } }
-  @media only screen and (min-width: 69em) {
-    .splash {
-      padding-left: 14rem; } }
-  @media only screen and (min-width: 106em) {
-    .splash {
-      padding-left: 40rem; } }
+.test-container {
+  z-index: 10;
+  position: relative;
+  background-color: #fff;
+  height: 1500px; }

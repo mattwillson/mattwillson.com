@@ -1,4 +1,7 @@
 .splash {
+  z-index: 1;
+  position: sticky;
+  top: 0;
   background-color: $color-primary;
   color: $color-white;
   padding: 4rem;
