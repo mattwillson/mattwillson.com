@@ -16,7 +16,7 @@
 body {
   box-sizing: border-box; }
   body a {
-    outline-color: #8B0000; }
+    outline-color: #990000; }
 
 body {
   font-family: "Berthold Akzidenz Grotesk BE", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -39,11 +39,11 @@ body {
   .navbar a {
     text-decoration: none; }
   .navbar__home {
-    color: #8B0000;
+    color: #990000;
     font-size: 3rem;
     margin-right: 0.5rem; }
     .navbar__home:active {
-      color: #F18B60; }
+      color: #FDD726; }
     @media only screen and (min-width: 54em) {
       .navbar__home {
         font-size: 4rem;
@@ -57,15 +57,15 @@ body {
     .navbar__link-box > a:link, .navbar__link-box > a:visited {
       color: #000; }
     .navbar__link-box > a:hover {
-      color: #8B0000; }
+      color: #FDD726; }
     .navbar__link-box > a:active {
-      color: #F18B60; }
+      color: #990000; }
 
 .splash {
   z-index: 1;
   position: sticky;
   top: 0;
-  background-color: #8B0000;
+  background-color: #990000;
   color: #fff;
   padding: 4rem; }
   .splash__text {
@@ -74,8 +74,6 @@ body {
     @media only screen and (min-width: 54em) {
       .splash__text {
         padding-right: 0; } }
-  .splash:hover {
-    background-color: #F18B60; }
   @media only screen and (min-width: 54em) {
     .splash {
       padding-top: 8rem;
@@ -114,9 +112,9 @@ header {
   .navbar__icon {
     fill: #000; }
     .navbar__icon:hover {
-      fill: #8B0000; }
+      fill: #FDD726; }
     .navbar__icon:active {
-      fill: #F18B60; }
+      fill: #990000; }
   .navbar__link-box {
     display: none; }
     @media only screen and (min-width: 54em) {

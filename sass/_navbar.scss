@@ -26,11 +26,11 @@
     fill: $color-black;
 
     &:hover {
-      fill: $color-primary;
+      fill: $color-secondary;
     }
 
     &:active {
-      fill: $color-secondary;
+      fill: $color-primary;
     }
   }
 
