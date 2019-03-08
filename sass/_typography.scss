@@ -57,11 +57,11 @@ body {
     }
 
     &:hover {
-      color: $color-primary;
+      color: $color-secondary;
     }
 
     &:active {
-      color: $color-secondary;
+      color: $color-primary;
     }
   }
 }
