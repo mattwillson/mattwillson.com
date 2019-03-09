@@ -1,0 +1,30 @@
+.photo {
+  margin-bottom: 6.1rem; // figcaption + margin-bottom = navbar height
+
+  & > figcaption {
+    font-size: 1.6rem;
+    letter-spacing: 0.25px;
+  } 
+
+  &--landscape {
+    width: calc(100vw - 2rem);
+    max-width: 85rem;
+
+    @include respond(tablet) {
+      width: calc(100vw - 5rem);
+    }
+  }
+
+  &--square {
+    width: calc(100vw - 2rem);
+    max-width: 60rem;
+  }
+
+  @include respond(tablet) {
+    margin-bottom: 7.6rem; // figcaption + margin-bottom = navbar height
+  }
+
+  @include respond(desktop) {
+    margin-bottom: 9.6rem; // figcaption + margin-bottom = navbar height
+  }
+}

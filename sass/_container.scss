@@ -1,0 +1,21 @@
+.container {
+  z-index: 10;
+  position: relative;
+  background-color: $color-white;
+  transform: translate3d(0,0,0); // Fixes splash scrolling bug
+  padding-right: 1rem;
+  padding-left: 1rem;
+
+  @include respond(tablet) {
+    padding-left: 4rem;
+  }
+
+  @include respond(laptop) {
+    padding-right: 0;
+    padding-left: 14rem;
+  }
+
+  @include respond(desktop) {
+    padding-left: 40rem;
+  }
+}

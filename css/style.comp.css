@@ -130,13 +130,45 @@ header {
       padding-left: 14rem; } }
   @media only screen and (min-width: 106em) {
     .navbar {
-      padding-top: 4rem;
-      padding-bottom: 4rem;
+      padding-top: 3rem;
+      padding-bottom: 3rem;
       padding-left: 40rem; } }
 
-.test-container {
+.container {
   z-index: 10;
   position: relative;
   background-color: #fff;
   transform: translate3d(0, 0, 0);
-  height: 1500px; }
+  padding-right: 1rem;
+  padding-left: 1rem; }
+  @media only screen and (min-width: 54em) {
+    .container {
+      padding-left: 4rem; } }
+  @media only screen and (min-width: 69em) {
+    .container {
+      padding-right: 0;
+      padding-left: 14rem; } }
+  @media only screen and (min-width: 106em) {
+    .container {
+      padding-left: 40rem; } }
+
+.photo {
+  margin-bottom: 6.1rem; }
+  .photo > figcaption {
+    font-size: 1.6rem;
+    letter-spacing: 0.25px; }
+  .photo--landscape {
+    width: calc(100vw - 2rem);
+    max-width: 85rem; }
+    @media only screen and (min-width: 54em) {
+      .photo--landscape {
+        width: calc(100vw - 5rem); } }
+  .photo--square {
+    width: calc(100vw - 2rem);
+    max-width: 60rem; }
+  @media only screen and (min-width: 54em) {
+    .photo {
+      margin-bottom: 7.6rem; } }
+  @media only screen and (min-width: 106em) {
+    .photo {
+      margin-bottom: 9.6rem; } }

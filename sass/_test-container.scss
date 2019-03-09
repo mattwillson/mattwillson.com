@@ -1,8 +1,0 @@
-.test-container {
-  z-index: 10;
-  position: relative;
-  background-color: $color-white;
-  transform: translate3d(0,0,0); // Fixes splash scrolling bug
-  
-  height: 1500px;
-}
