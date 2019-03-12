@@ -6,15 +6,6 @@
   color: $color-white;
   padding: 4rem;
 
-  &__text {
-    max-width: 30.5rem;
-    padding-right: 3rem;
-
-    @include respond(tablet) {
-      padding-right: 0;
-    }
-  }
-
   @include respond(tablet) {
     padding-top: 8rem;
     padding-right: 0;

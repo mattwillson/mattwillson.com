@@ -77,12 +77,6 @@ body {
   background-color: #990000;
   color: #fff;
   padding: 4rem; }
-  .splash__text {
-    max-width: 30.5rem;
-    padding-right: 3rem; }
-    @media only screen and (min-width: 54em) {
-      .splash__text {
-        padding-right: 0; } }
   @media only screen and (min-width: 54em) {
     .splash {
       padding-top: 8rem;
