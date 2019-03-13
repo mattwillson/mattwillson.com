@@ -41,6 +41,9 @@ body {
 .splash {
   font-size: 2rem;
   letter-spacing: 0.25px; }
+  @media only screen and (max-width: 22em) {
+    .splash {
+      font-size: 1.8rem; } }
   @media only screen and (min-width: 54em) {
     .splash {
       font-size: 2.2rem; } }
@@ -55,6 +58,9 @@ body {
     margin-right: 0.5rem; }
     .navbar__home:active {
       color: #FDD726; }
+    @media only screen and (max-width: 22em) {
+      .navbar__home {
+        font-size: 2.7rem; } }
     @media only screen and (min-width: 54em) {
       .navbar__home {
         font-size: 4rem;
@@ -72,6 +78,13 @@ body {
     .navbar__link-box > a:active {
       color: #990000; }
 
+.photo > figcaption {
+  font-size: 1.6rem;
+  letter-spacing: 0.25px; }
+  @media only screen and (max-width: 22em) {
+    .photo > figcaption {
+      font-size: 1.44rem; } }
+
 .splash {
   z-index: 1;
   position: sticky;
@@ -79,6 +92,9 @@ body {
   background-color: #990000;
   color: #fff;
   padding: 4rem; }
+  @media only screen and (max-width: 22em) {
+    .splash {
+      padding: 3.6rem; } }
   @media only screen and (min-width: 54em) {
     .splash {
       padding-top: 8rem;
@@ -111,6 +127,11 @@ header {
     .navbar__icon-box svg {
       width: 3rem;
       height: 3rem; }
+      @media only screen and (max-width: 22em) {
+        .navbar__icon-box a,
+        .navbar__icon-box svg {
+          width: 2.7rem;
+          height: 2.7rem; } }
     @media only screen and (min-width: 54em) {
       .navbar__icon-box {
         display: none; } }
@@ -125,6 +146,9 @@ header {
     @media only screen and (min-width: 54em) {
       .navbar__link-box {
         display: flex; } }
+  @media only screen and (max-width: 22em) {
+    .navbar {
+      padding: 1.8rem; } }
   @media only screen and (min-width: 54em) {
     .navbar {
       justify-content: flex-start;
@@ -159,9 +183,6 @@ header {
 
 .photo {
   margin-bottom: 6.1rem; }
-  .photo > figcaption {
-    font-size: 1.6rem;
-    letter-spacing: 0.25px; }
   .photo--landscape {
     width: calc(100vw - 2rem);
     max-width: 85rem; }
@@ -171,6 +192,9 @@ header {
   .photo--square {
     width: calc(100vw - 2rem);
     max-width: 60rem; }
+  @media only screen and (max-width: 22em) {
+    .photo {
+      margin-bottom: 5rem; } }
   @media only screen and (min-width: 54em) {
     .photo {
       margin-bottom: 7.6rem; } }

@@ -6,6 +6,10 @@
   color: $color-white;
   padding: 4rem;
 
+  @include respond(phone-small) {
+    padding: 3.6rem;
+  }
+
   @include respond(tablet) {
     padding-top: 8rem;
     padding-right: 0;

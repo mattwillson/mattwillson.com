@@ -1,6 +1,10 @@
 /////////////////////////////////////////////////////////////////////
 // MEDIA QUERIES
 @mixin respond($breakpoint) {
+  @if $breakpoint == phone-small {
+    @media only screen and (max-width: 22em) { @content }; // 352px / 16px
+  }
+
   @if $breakpoint == tablet {
     @media only screen and (min-width: 54em) { @content }; // 864px / 16px
   }
