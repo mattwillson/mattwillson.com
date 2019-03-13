@@ -182,7 +182,7 @@ header {
       padding-left: 40rem; } }
 
 .photo {
-  margin-bottom: 6.1rem; }
+  margin-bottom: 5.6rem; }
   .photo--landscape {
     width: calc(100vw - 2rem);
     max-width: 85rem; }
@@ -197,7 +197,7 @@ header {
       margin-bottom: 5rem; } }
   @media only screen and (min-width: 54em) {
     .photo {
-      margin-bottom: 7.6rem; } }
+      margin-bottom: 7.1rem; } }
   @media only screen and (min-width: 106em) {
     .photo {
-      margin-bottom: 9.6rem; } }
+      margin-bottom: 9.1rem; } }

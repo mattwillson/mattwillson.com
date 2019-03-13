@@ -1,5 +1,5 @@
 .photo {
-  margin-bottom: 6.1rem; // figcaption + margin-bottom = navbar height
+  margin-bottom: 5.6rem; // figcaption + margin-bottom = navbar height
 
   &--landscape {
     width: calc(100vw - 2rem);
@@ -20,10 +20,10 @@
   }
 
   @include respond(tablet) {
-    margin-bottom: 7.6rem; // figcaption + margin-bottom = navbar height
+    margin-bottom: 7.1rem; // figcaption + margin-bottom = navbar height
   }
 
   @include respond(desktop) {
-    margin-bottom: 9.6rem; // figcaption + margin-bottom = navbar height
+    margin-bottom: 9.1rem; // figcaption + margin-bottom = navbar height
   }
 }
