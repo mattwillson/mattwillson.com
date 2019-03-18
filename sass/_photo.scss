@@ -15,11 +15,11 @@
     max-width: 60rem;
   }
 
-  @include respond(phone-small) {
+  @include respond(small-phone) {
     margin-bottom: 5rem; // figcaption + margin-bottom = navbar height
   }
 
-  @include respond(tablet) {
+  @include respond(mini-tablet) {
     margin-bottom: 7.1rem; // figcaption + margin-bottom = navbar height
   }
 

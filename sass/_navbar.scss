@@ -12,13 +12,18 @@
 
     & a,
     & svg {
-      // same dimensions as font-size
+      // equals navbar__home font-size
       width: 3rem;
       height: 3rem;
 
-      @include respond(phone-small) {
+      @include respond(small-phone) {
         width: 2.7rem;
         height: 2.7rem;
+      }
+
+      @include respond(mini-tablet) {
+        width: 4rem;
+        height: 4rem;
       }
     }
 
@@ -47,7 +52,7 @@
     }
   }
 
-  @include respond(phone-small) {
+  @include respond(small-phone) {
     padding: 1.8rem;
   }
 

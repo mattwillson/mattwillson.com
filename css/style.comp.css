@@ -44,7 +44,7 @@ body {
   @media only screen and (max-width: 22em) {
     .splash {
       font-size: 1.8rem; } }
-  @media only screen and (min-width: 54em) {
+  @media only screen and (min-width: 37em) {
     .splash {
       font-size: 2.2rem; } }
 
@@ -61,12 +61,18 @@ body {
     @media only screen and (max-width: 22em) {
       .navbar__home {
         font-size: 2.7rem; } }
-    @media only screen and (min-width: 54em) {
+    @media only screen and (min-width: 37em) {
       .navbar__home {
         font-size: 4rem;
         margin-right: 0; } }
   .navbar__icon-box > a:not(:first-child) {
-    margin-left: 0.5rem; }
+    margin-left: 1rem; }
+    @media only screen and (max-width: 22em) {
+      .navbar__icon-box > a:not(:first-child) {
+        margin-left: 0.9rem; } }
+    @media only screen and (min-width: 37em) {
+      .navbar__icon-box > a:not(:first-child) {
+        margin-left: 2rem; } }
   .navbar__link-box {
     font-size: 4rem; }
   .navbar__link-box > a {
@@ -77,6 +83,9 @@ body {
       color: #FDD726; }
     .navbar__link-box > a:active {
       color: #990000; }
+    @media only screen and (min-width: 106em) {
+      .navbar__link-box > a {
+        margin-left: 3rem; } }
 
 .photo > figcaption {
   font-size: 1.6rem;
@@ -95,7 +104,7 @@ body {
   @media only screen and (max-width: 22em) {
     .splash {
       padding: 3.6rem; } }
-  @media only screen and (min-width: 54em) {
+  @media only screen and (min-width: 37em) {
     .splash {
       padding-top: 8rem;
       padding-right: 0;
@@ -132,6 +141,11 @@ header {
         .navbar__icon-box svg {
           width: 2.7rem;
           height: 2.7rem; } }
+      @media only screen and (min-width: 37em) {
+        .navbar__icon-box a,
+        .navbar__icon-box svg {
+          width: 4rem;
+          height: 4rem; } }
     @media only screen and (min-width: 54em) {
       .navbar__icon-box {
         display: none; } }
@@ -195,7 +209,7 @@ header {
   @media only screen and (max-width: 22em) {
     .photo {
       margin-bottom: 5rem; } }
-  @media only screen and (min-width: 54em) {
+  @media only screen and (min-width: 37em) {
     .photo {
       margin-bottom: 7.1rem; } }
   @media only screen and (min-width: 106em) {
