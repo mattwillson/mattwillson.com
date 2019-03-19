@@ -44,7 +44,7 @@ body {
   @media only screen and (max-width: 22em) {
     .splash {
       font-size: 1.8rem; } }
-  @media only screen and (min-width: 37em) {
+  @media only screen and (min-width: 37em) and (min-height: 37em) {
     .splash {
       font-size: 2.2rem; } }
 
@@ -61,7 +61,7 @@ body {
     @media only screen and (max-width: 22em) {
       .navbar__home {
         font-size: 2.7rem; } }
-    @media only screen and (min-width: 37em) {
+    @media only screen and (min-width: 37em) and (min-height: 37em) {
       .navbar__home {
         font-size: 4rem;
         margin-right: 0; } }
@@ -70,7 +70,7 @@ body {
     @media only screen and (max-width: 22em) {
       .navbar__icon-box > a:not(:first-child) {
         margin-left: 0.9rem; } }
-    @media only screen and (min-width: 37em) {
+    @media only screen and (min-width: 37em) and (min-height: 37em) {
       .navbar__icon-box > a:not(:first-child) {
         margin-left: 2rem; } }
   .navbar__link-box {
@@ -104,7 +104,7 @@ body {
   @media only screen and (max-width: 22em) {
     .splash {
       padding: 3.6rem; } }
-  @media only screen and (min-width: 37em) {
+  @media only screen and (min-width: 37em) and (min-height: 37em) {
     .splash {
       padding-top: 8rem;
       padding-right: 0;
@@ -141,7 +141,7 @@ header {
         .navbar__icon-box svg {
           width: 2.7rem;
           height: 2.7rem; } }
-      @media only screen and (min-width: 37em) {
+      @media only screen and (min-width: 37em) and (min-height: 37em) {
         .navbar__icon-box a,
         .navbar__icon-box svg {
           width: 4rem;
@@ -209,7 +209,7 @@ header {
   @media only screen and (max-width: 22em) {
     .photo {
       margin-bottom: 5rem; } }
-  @media only screen and (min-width: 37em) {
+  @media only screen and (min-width: 37em) and (min-height: 37em) {
     .photo {
       margin-bottom: 7.1rem; } }
   @media only screen and (min-width: 106em) {

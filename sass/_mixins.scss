@@ -6,7 +6,7 @@
   }
 
   @if $breakpoint == mini-tablet {
-    @media only screen and (min-width: 37em) { @content }; // 592px / 16px
+    @media only screen and (min-width: 37em) and (min-height: 37em) { @content }; // 592px / 16px
   }
 
   @if $breakpoint == tablet {
