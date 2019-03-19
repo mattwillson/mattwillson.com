@@ -62,14 +62,14 @@ body {
   }
 
   &__icon-box > a:not(:first-child) {
-    margin-left: 1rem; // 50% of navbar padding
+    margin-left: 1rem;
 
     @include respond(small-phone) {
-      margin-left: 0.9rem; // 50% of navbar padding
+      margin-left: 0.9rem;
     }
 
     @include respond(mini-tablet) {
-      margin-left: 2rem; // equals navbar padding
+      margin-left: 1.4rem; // equals navbar padding
     }
   }
 
@@ -78,7 +78,7 @@ body {
   }
 
   &__link-box > a {
-    margin-left: 2rem; // equals navbar padding
+    margin-left: 2rem;
 
     &:link,
     &:visited {
@@ -94,7 +94,7 @@ body {
     }
 
     @include respond(desktop) {
-      margin-left: 3rem; // equals navbar padding
+      margin-left: 3rem;
     }
   }
 }

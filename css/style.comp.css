@@ -72,7 +72,7 @@ body {
         margin-left: 0.9rem; } }
     @media only screen and (min-width: 37em) and (min-height: 37em) {
       .navbar__icon-box > a:not(:first-child) {
-        margin-left: 2rem; } }
+        margin-left: 1.4rem; } }
   .navbar__link-box {
     font-size: 4rem; }
   .navbar__link-box > a {
