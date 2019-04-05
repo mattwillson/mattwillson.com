@@ -10,13 +10,11 @@
   background-color: #fff; }
 
 ::selection {
-  background-color: #000;
-  color: #fff; }
+  background-color: #FDD726;
+  color: #000; }
 
 body {
   box-sizing: border-box; }
-  body a {
-    outline-color: #990000; }
 
 @font-face {
   font-family: 'Akzidenz-Grotesk Regular';
@@ -121,6 +119,8 @@ header {
   position: sticky;
   top: 0;
   background-color: #fff; }
+  header a {
+    outline-color: #990000; }
 
 .navbar {
   display: flex;

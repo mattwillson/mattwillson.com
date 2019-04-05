@@ -18,14 +18,10 @@ $color-black: #000;
 }
 
 ::selection {
-  background-color: $color-black;
-  color: $color-white;
+  background-color: $color-secondary;
+  color: $color-black;
 }
 
 body {
   box-sizing: border-box;
-
-  & a {
-    outline-color: $color-primary;
-  }
 }
