@@ -107,7 +107,7 @@ body {
       padding-top: 8rem;
       padding-right: 0;
       padding-bottom: 8rem; } }
-  @media only screen and (min-width: 69em) {
+  @media only screen and (min-width: 70em) {
     .splash {
       padding-left: 14rem; } }
   @media only screen and (min-width: 106em) {
@@ -168,7 +168,7 @@ header {
       justify-content: flex-start;
       padding-right: 0;
       padding-left: 4rem; } }
-  @media only screen and (min-width: 69em) {
+  @media only screen and (min-width: 70em) {
     .navbar {
       padding-left: 14rem; } }
   @media only screen and (min-width: 106em) {
@@ -187,7 +187,7 @@ header {
   @media only screen and (min-width: 54em) {
     .container {
       padding-left: 4rem; } }
-  @media only screen and (min-width: 69em) {
+  @media only screen and (min-width: 70em) {
     .container {
       padding-right: 0;
       padding-left: 14rem; } }
@@ -197,6 +197,8 @@ header {
 
 .photo {
   margin-bottom: 5.6rem; }
+  .photo a {
+    outline-color: #FDD726; }
   .photo--landscape {
     width: calc(100vw - 2rem);
     max-width: 85rem; }
@@ -215,3 +217,62 @@ header {
   @media only screen and (min-width: 106em) {
     .photo {
       margin-bottom: 9.1rem; } }
+
+.fullscreen {
+  width: 100vw; }
+  @media only screen and (min-width: 30em) and (max-height: 30em) {
+    .fullscreen {
+      width: initial;
+      height: 100vh; } }
+  @media only screen and (min-width: 60em) and (max-width: 64em) and (height: 37.5em) {
+    .fullscreen {
+      width: initial;
+      height: 100vh; } }
+  @media only screen and (width: 80em) and (height: 50em) {
+    .fullscreen {
+      width: initial;
+      height: 100vh; } }
+  @media only screen and (min-width: 70em) {
+    .fullscreen {
+      width: initial;
+      height: 100vh; } }
+  @media only screen and (width: 80em) and (height: 59.375em) {
+    .fullscreen {
+      width: 100vw;
+      height: initial; } }
+  @media only screen and (width: 85.375em) and (height: 64em) {
+    .fullscreen {
+      width: 100vw;
+      height: initial; } }
+  @media only screen and (min-width: 54em) {
+    .fullscreen--square {
+      width: initial;
+      height: 100vh; } }
+  @media only screen and (width: 80em) and (height: 59.375em) {
+    .fullscreen--square {
+      width: initial;
+      height: 100vh; } }
+  @media only screen and (min-width: 64em) and (min-height: 82em) {
+    .fullscreen--square {
+      width: 100vw;
+      height: initial; } }
+
+.fullscreen-bg {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.85);
+  z-index: 100;
+  opacity: 0;
+  visibility: hidden;
+  transition: all .25s; }
+  .fullscreen-bg:target {
+    opacity: 1;
+    visibility: visible; }
+  .fullscreen-bg a {
+    outline-color: #FDD726; }

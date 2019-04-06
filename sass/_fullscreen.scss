@@ -1,0 +1,50 @@
+.fullscreen {
+  width: 100vw;
+
+  @include respond(phone-landscape) {
+    width: initial;
+    height: 100vh;
+  }
+
+  @include respond(mini-tablet-landscape) {
+    width: initial;
+    height: 100vh;
+  }
+
+  @include respond(tablet-landscape) {
+    width: initial;
+    height: 100vh;
+  }
+
+  @include respond(laptop) {
+    width: initial;
+    height: 100vh;
+  }
+
+  @include respond(laptop-touch) {
+    width: 100vw;
+    height: initial;
+  }
+
+  @include respond(big-tablet-landscape) {
+    width: 100vw;
+    height: initial;
+  }
+
+  &--square {
+    @include respond(tablet) {
+      width: initial;
+      height: 100vh;
+    }
+
+    @include respond(laptop-touch) {
+      width: initial;
+      height: 100vh;
+    }
+
+    @include respond(big-tablet) {
+      width: 100vw;
+      height: initial;
+    }
+  }
+}
