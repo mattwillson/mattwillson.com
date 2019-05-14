@@ -1,48 +1,27 @@
-/////////////////////////////////////////////////////////////////////
 // MEDIA QUERIES
 @mixin respond($breakpoint) {
   @if $breakpoint == small-phone {
-    @media only screen and (max-width: 22em) { @content }; // 352px / 16px
-  }
-
-  @if $breakpoint == phone-landscape {
-    @media only screen and (min-width: 30em) and (max-height: 30em) { @content }; // 480px / 16px
+    // 352px / 16px = 22em
+    @media only screen and (max-width: 22em) { @content };
   }
 
   @if $breakpoint == mini-tablet {
-    @media only screen and (min-width: 37em) and (min-height: 37em) { @content }; // 592px / 16px
-  }
-
-  @if $breakpoint == mini-tablet-landscape {
-    @media only screen and (min-width: 60em) and (max-width: 64em) and (height: 37.5em) { @content }; // 960px - 1024px by 600px
+    // 592px / 16px = 37em
+    @media only screen and (min-width: 37em) { @content };
   }
 
   @if $breakpoint == tablet {
-    @media only screen and (min-width: 54em) { @content }; // 864px / 16px
-  }
-
-  @if $breakpoint == big-tablet {
-    @media only screen and (min-width: 64em) and (min-height: 82em) { @content }; // 1024px by 1312px
+    // 864px / 16px = 54em
+    @media only screen and (min-width: 54em) { @content };
   }
 
   @if $breakpoint == laptop {
-    @media only screen and (min-width: 70em) { @content }; // 1120px / 16px
+    // 1120px / 16px = 70em
+    @media only screen and (min-width: 70em) { @content };
   }
 
   @if $breakpoint == desktop {
-    @media only screen and (min-width: 106em) { @content }; // 1696px / 16px
-  }
-  
-  // FIXED MEDIA QUERIES
-  @if $breakpoint == tablet-landscape {
-    @media only screen and (width: 80em) and (height: 50em) { @content }; // 1280px by 800px
-  }
-
-  @if $breakpoint == laptop-touch {
-    @media only screen and (width: 80em) and (height: 59.375em) { @content }; // 1280px by 950px
-  }
-
-  @if $breakpoint == big-tablet-landscape {
-    @media only screen and (width: 85.375em) and (height: 64em) { @content }; // 1366px by 1024px
+    // 1696px / 16px = 106em
+    @media only screen and (min-width: 106em) { @content };
   }
 }

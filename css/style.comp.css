@@ -9,6 +9,9 @@
   font-size: 62.5%;
   background-color: #fff; }
 
+:fullscreen::backdrop {
+  background-color: rgba(0, 0, 0, 0.8); }
+
 ::selection {
   background-color: #FDD726;
   color: #000; }
@@ -42,7 +45,7 @@ body {
   @media only screen and (max-width: 22em) {
     .splash {
       font-size: 1.8rem; } }
-  @media only screen and (min-width: 37em) and (min-height: 37em) {
+  @media only screen and (min-width: 37em) {
     .splash {
       font-size: 2.2rem; } }
 
@@ -59,7 +62,7 @@ body {
     @media only screen and (max-width: 22em) {
       .navbar__home {
         font-size: 2.7rem; } }
-    @media only screen and (min-width: 37em) and (min-height: 37em) {
+    @media only screen and (min-width: 37em) {
       .navbar__home {
         font-size: 4rem;
         margin-right: 0; } }
@@ -68,7 +71,7 @@ body {
     @media only screen and (max-width: 22em) {
       .navbar__icon-box > a:not(:first-child) {
         margin-left: 0.9rem; } }
-    @media only screen and (min-width: 37em) and (min-height: 37em) {
+    @media only screen and (min-width: 37em) {
       .navbar__icon-box > a:not(:first-child) {
         margin-left: 1.4rem; } }
   .navbar__link-box {
@@ -102,7 +105,7 @@ body {
   @media only screen and (max-width: 22em) {
     .splash {
       padding: 3.6rem; } }
-  @media only screen and (min-width: 37em) and (min-height: 37em) {
+  @media only screen and (min-width: 37em) {
     .splash {
       padding-top: 8rem;
       padding-right: 0;
@@ -141,7 +144,7 @@ header {
         .navbar__icon-box svg {
           width: 2.7rem;
           height: 2.7rem; } }
-      @media only screen and (min-width: 37em) and (min-height: 37em) {
+      @media only screen and (min-width: 37em) {
         .navbar__icon-box a,
         .navbar__icon-box svg {
           width: 4rem;
@@ -197,8 +200,6 @@ header {
 
 .photo {
   margin-bottom: 5.6rem; }
-  .photo a {
-    outline-color: #FDD726; }
   .photo--landscape {
     width: calc(100vw - 2rem);
     max-width: 85rem; }
@@ -211,68 +212,9 @@ header {
   @media only screen and (max-width: 22em) {
     .photo {
       margin-bottom: 5rem; } }
-  @media only screen and (min-width: 37em) and (min-height: 37em) {
+  @media only screen and (min-width: 37em) {
     .photo {
       margin-bottom: 7.1rem; } }
   @media only screen and (min-width: 106em) {
     .photo {
       margin-bottom: 9.1rem; } }
-
-.fullscreen {
-  width: 100vw; }
-  @media only screen and (min-width: 30em) and (max-height: 30em) {
-    .fullscreen {
-      width: initial;
-      height: 100vh; } }
-  @media only screen and (min-width: 60em) and (max-width: 64em) and (height: 37.5em) {
-    .fullscreen {
-      width: initial;
-      height: 100vh; } }
-  @media only screen and (width: 80em) and (height: 50em) {
-    .fullscreen {
-      width: initial;
-      height: 100vh; } }
-  @media only screen and (min-width: 70em) {
-    .fullscreen {
-      width: initial;
-      height: 100vh; } }
-  @media only screen and (width: 80em) and (height: 59.375em) {
-    .fullscreen {
-      width: 100vw;
-      height: initial; } }
-  @media only screen and (width: 85.375em) and (height: 64em) {
-    .fullscreen {
-      width: 100vw;
-      height: initial; } }
-  @media only screen and (min-width: 54em) {
-    .fullscreen--square {
-      width: initial;
-      height: 100vh; } }
-  @media only screen and (width: 80em) and (height: 59.375em) {
-    .fullscreen--square {
-      width: initial;
-      height: 100vh; } }
-  @media only screen and (min-width: 64em) and (min-height: 82em) {
-    .fullscreen--square {
-      width: 100vw;
-      height: initial; } }
-
-.fullscreen-bg {
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: fixed;
-  top: 0;
-  left: 0;
-  background-color: rgba(0, 0, 0, 0.85);
-  z-index: 100;
-  opacity: 0;
-  visibility: hidden;
-  transition: all .25s; }
-  .fullscreen-bg:target {
-    opacity: 1;
-    visibility: visible; }
-  .fullscreen-bg a {
-    outline-color: #FDD726; }

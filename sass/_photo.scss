@@ -1,10 +1,6 @@
 .photo {
   margin-bottom: 5.6rem; // figcaption + margin-bottom = navbar height
 
-  & a {
-    outline-color: $color-secondary;
-  }
-
   &--landscape {
     width: calc(100vw - 2rem);
     max-width: 85rem;

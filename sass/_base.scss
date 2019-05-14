@@ -17,6 +17,10 @@ $color-black: #000;
   background-color: $color-white;
 }
 
+:fullscreen::backdrop {
+  background-color: rgba($color-black, 0.8);
+}
+
 ::selection {
   background-color: $color-secondary;
   color: $color-black;
