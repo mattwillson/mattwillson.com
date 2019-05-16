@@ -1,17 +1,5 @@
-document.addEventListener('fullscreenchange', e => {
-  if (document.fullscreenElement) {
-    console.log('Enter full-screen');
-  } else {
-    console.log('Exit full-screen');
-  }
-});
-
-// Toggle full-screen mode when an image element is clicked
-document.addEventListener('click', e => {
-  if (e.target.tagName == 'IMG') {
-    toggleFullscreen(e);
-  }
-}, false);
+// Convert HTMLCollection of images within document to an array
+const imgArray = Array.prototype.slice.call(document.images);
 
 const toggleFullscreen = e => {
   // If full-screen mode is supported
@@ -35,3 +23,16 @@ const toggleFullscreen = e => {
     }
   }
 };
+
+// Toggle full-screen mode when an image is clicked
+imgArray.forEach(img => {
+  img.addEventListener('click', toggleFullscreen, false);
+});
+
+document.addEventListener('fullscreenchange', e => {
+  if (document.fullscreenElement) {
+    console.log('Enter full-screen');
+  } else {
+    console.log('Exit full-screen');
+  }
+});
