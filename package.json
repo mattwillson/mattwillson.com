@@ -1,5 +1,5 @@
 {
-  "name": "mattwillson.github.io",
+  "name": "mattwillson.com",
   "version": "1.0.0",
   "description": "Personal website",
   "private": true,
@@ -11,14 +11,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mattwillson/mattwillson.github.io.git"
+    "url": "git+https://github.com/mattwillson/mattwillson.com.git"
   },
   "author": "Matt Willson",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/mattwillson/mattwillson.github.io/issues"
+    "url": "https://github.com/mattwillson/mattwillson.com/issues"
   },
-  "homepage": "https://github.com/mattwillson/mattwillson.github.io#readme",
+  "homepage": "https://github.com/mattwillson/mattwillson.com#readme",
   "devDependencies": {
     "@babel/core": "^7.4.5",
     "@babel/preset-env": "^7.4.5",
