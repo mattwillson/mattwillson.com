@@ -4,6 +4,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const TerserJSPlugin = require('terser-webpack-plugin');
+const CnameWebpackPlugin = require('cname-webpack-plugin');
 
 module.exports = {
   entry: {
@@ -12,10 +13,18 @@ module.exports = {
   },
   output: {
     filename: '[name].bundle.js',
-    path: path.resolve(__dirname, 'dist')
+
+    /**
+     * GitHub Pages requires a 'docs' directory
+     * instead of the default 'dist'
+     */
+    path: path.resolve(__dirname, 'docs')
   },
   plugins: [
-    // removes unused files from the /dist folder before each build
+    /**
+     * removes unused files from the 'docs'
+     * directory before each build
+     */
     new CleanWebpackPlugin(),
 
     /**
@@ -32,6 +41,11 @@ module.exports = {
     new MiniCssExtractPlugin({
       filename: '[name].css',
       chunkFilename: '[id].css'
+    }),
+
+    // creates a CNAME file for production build
+    new CnameWebpackPlugin({
+      domain: 'mattwillson.com'
     })
   ],
   optimization: {
@@ -72,7 +86,7 @@ module.exports = {
             options: {
               sourceMap: true,
 
-              // recommended in postcss-loader docs
+              // recommended in postcss-loader guide
               importLoaders: 1
             }
           },
