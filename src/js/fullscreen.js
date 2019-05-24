@@ -1,7 +1,7 @@
 import fscreen from 'fscreen';
 
 // convert HTMLCollection of images within document to an array
-const imgArray = [...document.images];
+const imgArr = [...document.images];
 
 const toggleFullscreen = e => {
 
@@ -25,16 +25,6 @@ const toggleFullscreen = e => {
     // if full-screen mode is enabled
     } else {
 
-      /**
-       * for Safari compatibility:
-       * add class back to clicked image
-       */
-      if (e.target.alt === 'Blouberg Beach' || e.target.alt === 'Alston') {
-        e.target.setAttribute('class', 'photo--landscape');
-      } else {
-        e.target.setAttribute('class', 'photo--square');
-      }
-
       // disable full-screen mode
       fscreen.exitFullscreen().catch(err => {
         alert(`Error attempting to disable full-screen mode: ${err.message} (${err.name})`);
@@ -44,14 +34,27 @@ const toggleFullscreen = e => {
 };
 
 // toggle full-screen mode when an image is clicked
-imgArray.forEach(img => {
+imgArr.forEach(img => {
   img.addEventListener('click', toggleFullscreen, false);
 });
 
+// 'fullscreenchange' event handler
 fscreen.addEventListener('fullscreenchange', e => {
   if (fscreen.fullscreenElement) {
     console.log('Enter full-screen');
   } else {
     console.log('Exit full-screen');
+
+    /**
+     * for Safari compatibility:
+     * add class back to clicked image
+     */
+    const imgNoClass = imgArr.find(img => img.className === '');
+
+    if (imgNoClass.alt === 'Blouberg Beach' || imgNoClass.alt === 'Alston') {
+      imgNoClass.setAttribute('class', 'photo--landscape');
+    } else {
+      imgNoClass.setAttribute('class', 'photo--square');
+    }
   }
 });
