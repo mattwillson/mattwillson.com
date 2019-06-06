@@ -33,7 +33,7 @@ module.exports = {
      */
     new HtmlWebpackPlugin({
       template: './src/index.html',
-      favicon: './src/img/liverbird.png',
+      favicon: './src/images/liverbird.png',
       minify: true
     }),
 
