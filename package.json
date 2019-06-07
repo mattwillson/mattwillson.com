@@ -4,7 +4,7 @@
   "description": "Personal website",
   "private": true,
   "scripts": {
-    "test": "mocha --no-timeouts test/e2e",
+    "test": "mocha --no-timeouts test/**/*.js",
     "lint": "eslint src/js",
     "watch": "webpack --watch",
     "start": "webpack-dev-server --open --config webpack.dev.js",
