@@ -3,7 +3,7 @@ const jsdom = require('jsdom');
 const { JSDOM } = jsdom;
 
 describe('Navbar icon href attributes', function() {
-  describe('Github', function() {
+  describe('GitHub', function() {
     it('should be - https://www.github.com/mattwillson', function(done) {
       JSDOM.fromURL('http://localhost:8080/').then(dom => {
         const githubIconHref = dom.window.document.getElementsByClassName('navbar__icon-box')[0].children[0].getAttribute('href');

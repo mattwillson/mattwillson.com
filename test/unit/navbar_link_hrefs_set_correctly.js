@@ -14,7 +14,7 @@ describe('Navbar link href attributes', function() {
     });
   });
 
-  describe('Github', function() {
+  describe('GitHub', function() {
     it('should be - https://www.github.com/mattwillson', function(done) {
       JSDOM.fromURL('http://localhost:8080/').then(dom => {
         const githubLinkHref = dom.window.document.getElementsByClassName('navbar__link-box')[0].children[0].getAttribute('href');
