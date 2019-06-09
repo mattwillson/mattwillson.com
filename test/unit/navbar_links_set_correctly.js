@@ -39,9 +39,9 @@ describe('Navbar links', function() {
   describe('Home target', function() {
     it('should be - _self', function(done) {
       JSDOM.fromURL('http://localhost:8080/').then(dom => {
-        const homeTarget = dom.window.document.getElementsByClassName('navbar__home')[0].getAttribute('target');
+        const homeLinkTarget = dom.window.document.getElementsByClassName('navbar__home')[0].getAttribute('target');
 
-        expect(homeTarget).to.equal('_self');
+        expect(homeLinkTarget).to.equal('_self');
         done();
       }).catch(err => done(err));
     });
@@ -83,9 +83,9 @@ describe('Navbar links', function() {
   describe('GitHub target', function() {
     it('should be - _blank', function(done) {
       JSDOM.fromURL('http://localhost:8080/').then(dom => {
-        const githubTarget = dom.window.document.getElementsByClassName('navbar__link-box')[0].children[0].getAttribute('target');
+        const githubLinkTarget = dom.window.document.getElementsByClassName('navbar__link-box')[0].children[0].getAttribute('target');
 
-        expect(githubTarget).to.equal('_blank');
+        expect(githubLinkTarget).to.equal('_blank');
         done();
       }).catch(err => done(err));
     });
@@ -127,9 +127,9 @@ describe('Navbar links', function() {
   describe('Instagram target', function() {
     it('should be - _blank', function(done) {
       JSDOM.fromURL('http://localhost:8080/').then(dom => {
-        const instagramTarget = dom.window.document.getElementsByClassName('navbar__link-box')[0].children[1].getAttribute('target');
+        const instagramLinkTarget = dom.window.document.getElementsByClassName('navbar__link-box')[0].children[1].getAttribute('target');
 
-        expect(instagramTarget).to.equal('_blank');
+        expect(instagramLinkTarget).to.equal('_blank');
         done();
       }).catch(err => done(err));
     });
@@ -171,9 +171,9 @@ describe('Navbar links', function() {
   describe('LinkedIn target', function() {
     it('should be - _blank', function(done) {
       JSDOM.fromURL('http://localhost:8080/').then(dom => {
-        const linkedinTarget = dom.window.document.getElementsByClassName('navbar__link-box')[0].children[2].getAttribute('target');
+        const linkedinLinkTarget = dom.window.document.getElementsByClassName('navbar__link-box')[0].children[2].getAttribute('target');
 
-        expect(linkedinTarget).to.equal('_blank');
+        expect(linkedinLinkTarget).to.equal('_blank');
         done();
       }).catch(err => done(err));
     });
