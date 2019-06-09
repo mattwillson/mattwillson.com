@@ -36,6 +36,17 @@ describe('Navbar links', function() {
     });
   });
 
+  describe('Home target', function() {
+    it('should be - _self', function(done) {
+      JSDOM.fromURL('http://localhost:8080/').then(dom => {
+        const homeTarget = dom.window.document.getElementsByClassName('navbar__home')[0].getAttribute('target');
+
+        expect(homeTarget).to.equal('_self');
+        done();
+      }).catch(err => done(err));
+    });
+  });
+
   describe('GitHub text', function() {
     it('should be - GitHub', function(done) {
       JSDOM.fromURL('http://localhost:8080/').then(dom => {
@@ -64,6 +75,17 @@ describe('Navbar links', function() {
         const githubLinkHref = dom.window.document.getElementsByClassName('navbar__link-box')[0].children[0].getAttribute('href');
 
         expect(githubLinkHref).to.equal('https://www.github.com/mattwillson');
+        done();
+      }).catch(err => done(err));
+    });
+  });
+
+  describe('GitHub target', function() {
+    it('should be - _blank', function(done) {
+      JSDOM.fromURL('http://localhost:8080/').then(dom => {
+        const githubTarget = dom.window.document.getElementsByClassName('navbar__link-box')[0].children[0].getAttribute('target');
+
+        expect(githubTarget).to.equal('_blank');
         done();
       }).catch(err => done(err));
     });
@@ -102,6 +124,17 @@ describe('Navbar links', function() {
     });
   });
 
+  describe('Instagram target', function() {
+    it('should be - _blank', function(done) {
+      JSDOM.fromURL('http://localhost:8080/').then(dom => {
+        const instagramTarget = dom.window.document.getElementsByClassName('navbar__link-box')[0].children[1].getAttribute('target');
+
+        expect(instagramTarget).to.equal('_blank');
+        done();
+      }).catch(err => done(err));
+    });
+  });
+
   describe('LinkedIn text', function() {
     it('should be - LinkedIn', function(done) {
       JSDOM.fromURL('http://localhost:8080/').then(dom => {
@@ -130,6 +163,17 @@ describe('Navbar links', function() {
         const linkedinLinkHref = dom.window.document.getElementsByClassName('navbar__link-box')[0].children[2].getAttribute('href');
 
         expect(linkedinLinkHref).to.equal('https://www.linkedin.com/in/matt-willson');
+        done();
+      }).catch(err => done(err));
+    });
+  });
+
+  describe('LinkedIn target', function() {
+    it('should be - _blank', function(done) {
+      JSDOM.fromURL('http://localhost:8080/').then(dom => {
+        const linkedinTarget = dom.window.document.getElementsByClassName('navbar__link-box')[0].children[2].getAttribute('target');
+
+        expect(linkedinTarget).to.equal('_blank');
         done();
       }).catch(err => done(err));
     });
