@@ -25,6 +25,17 @@ describe('Navbar icons', function() {
     });
   });
 
+  describe('GitHub target', function() {
+    it('should be - _blank', function(done) {
+      JSDOM.fromURL('http://localhost:8080/').then(dom => {
+        const githubIconTarget = dom.window.document.getElementsByClassName('navbar__icon-box')[0].children[0].getAttribute('target');
+
+        expect(githubIconTarget).to.equal('_blank');
+        done();
+      }).catch(err => done(err));
+    });
+  });
+
   describe('Instagram title', function() {
     it('should be - Instagram', function(done) {
       JSDOM.fromURL('http://localhost:8080/').then(dom => {
@@ -47,6 +58,17 @@ describe('Navbar icons', function() {
     });
   });
 
+  describe('Instagram target', function() {
+    it('should be - _blank', function(done) {
+      JSDOM.fromURL('http://localhost:8080/').then(dom => {
+        const instagramIconTarget = dom.window.document.getElementsByClassName('navbar__icon-box')[0].children[1].getAttribute('target');
+
+        expect(instagramIconTarget).to.equal('_blank');
+        done();
+      }).catch(err => done(err));
+    });
+  });
+
   describe('LinkedIn title', function() {
     it('should be - LinkedIn', function(done) {
       JSDOM.fromURL('http://localhost:8080/').then(dom => {
@@ -64,6 +86,17 @@ describe('Navbar icons', function() {
         const linkedinIconHref = dom.window.document.getElementsByClassName('navbar__icon-box')[0].children[2].getAttribute('href');
 
         expect(linkedinIconHref).to.equal('https://www.linkedin.com/in/matt-willson');
+        done();
+      }).catch(err => done(err));
+    });
+  });
+
+  describe('LinkedIn target', function() {
+    it('should be - _blank', function(done) {
+      JSDOM.fromURL('http://localhost:8080/').then(dom => {
+        const linkedinIconTarget = dom.window.document.getElementsByClassName('navbar__icon-box')[0].children[2].getAttribute('target');
+
+        expect(linkedinIconTarget).to.equal('_blank');
         done();
       }).catch(err => done(err));
     });
