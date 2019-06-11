@@ -39,11 +39,13 @@ imgArr.forEach(img => {
 });
 
 // 'fullscreenchange' event handler
-fscreen.addEventListener('fullscreenchange', e => {
+fscreen.addEventListener('fullscreenchange', () => {
+  
+  // Enter full-screen
   if (fscreen.fullscreenElement) {
-    console.log('Enter full-screen');
+
+  // Exit full-screen
   } else {
-    console.log('Exit full-screen');
 
     /**
      * for Safari compatibility:
