@@ -20,8 +20,7 @@ describe('LinkedIn link', function() {
 
       // wait until there are two open tabs
       .then(() => driver.wait(() => (
-        driver.getAllWindowHandles()
-        .then(arr => arr.length === 2)
+        driver.getAllWindowHandles().then(arr => arr.length === 2)
       ), 20000))
 
       // switch to newly opened tab
