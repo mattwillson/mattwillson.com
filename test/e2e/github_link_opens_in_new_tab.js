@@ -19,9 +19,10 @@ describe('GitHub link', function() {
       .then(elem => elem.click())
 
       // wait until there are two open tabs
-      .then(() => driver.wait(() =>
-        driver.getAllWindowHandles().then(arr => arr.length === 2), 20000
-      ))
+      .then(() => driver.wait(() => (
+        driver.getAllWindowHandles()
+        .then(arr => arr.length === 2)
+      ), 20000))
 
       // switch to newly opened tab
       .then(() => driver.switchTo().window('4294967301'))
