@@ -31,7 +31,7 @@ describe('LinkedIn link', function() {
       .then(() => driver.getTitle())
 
       // compare actual title to expected title
-      .then(title => expect(title).to.equal('Matt Willson - Raleigh, North Carolina | Professional Profile | LinkedIn'))
+      .then(title => expect(title).to.include('LinkedIn'))
       .then(() => driver.quit())
       .then(done)
       .catch(err => done(err));
