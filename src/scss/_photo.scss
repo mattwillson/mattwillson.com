@@ -1,6 +1,10 @@
 .photo {
   margin-bottom: 5.6rem; // figcaption + margin-bottom = navbar height
 
+  & > img {
+    cursor: pointer;
+  }
+
   &--landscape {
     width: calc(100vw - 2rem);
     max-width: 85rem;
