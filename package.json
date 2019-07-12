@@ -42,13 +42,13 @@
     "sass-loader": "*",
     "selenium-webdriver": "^4.0.0-alpha.1",
     "terser-webpack-plugin": "^1.2.4",
-    "webpack": "^4.31.0",
-    "webpack-cli": "^3.3.2",
-    "webpack-dev-server": "^3.4.1",
+    "webpack": "^4.35.3",
+    "webpack-cli": "^3.3.5",
+    "webpack-dev-server": "^3.7.2",
     "webpack-merge": "^4.2.1"
   },
   "dependencies": {
     "fscreen": "^1.0.2",
-    "lodash": "^4.17.11"
+    "lodash": "^4.17.13"
   }
 }
