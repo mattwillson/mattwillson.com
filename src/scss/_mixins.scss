@@ -1,27 +1,37 @@
 // MEDIA QUERIES
 @mixin respond($breakpoint) {
+  // 352px / 16px = 22em
   @if $breakpoint == small-phone {
-    // 352px / 16px = 22em
-    @media only screen and (max-width: 22em) { @content };
+    @media only screen and (max-width: 22em) {
+      @content;
+    }
   }
 
+  // 592px / 16px = 37em
   @if $breakpoint == mini-tablet {
-    // 592px / 16px = 37em
-    @media only screen and (min-width: 37em) { @content };
+    @media only screen and (min-width: 37em) {
+      @content;
+    }
   }
 
+  // 864px / 16px = 54em
   @if $breakpoint == tablet {
-    // 864px / 16px = 54em
-    @media only screen and (min-width: 54em) { @content };
+    @media only screen and (min-width: 54em) {
+      @content;
+    }
   }
 
+  // 1120px / 16px = 70em
   @if $breakpoint == laptop {
-    // 1120px / 16px = 70em
-    @media only screen and (min-width: 70em) { @content };
+    @media only screen and (min-width: 70em) {
+      @content;
+    }
   }
 
+  // 1696px / 16px = 106em
   @if $breakpoint == desktop {
-    // 1696px / 16px = 106em
-    @media only screen and (min-width: 106em) { @content };
+    @media only screen and (min-width: 106em) {
+      @content;
+    }
   }
 }

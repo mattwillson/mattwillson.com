@@ -12,9 +12,8 @@
 
     & a,
     & svg {
-      // equals navbar__home font-size
-      width: 3rem;
-      height: 3rem;
+      width: 3rem; // equals navbar__home font-size
+      height: 3rem; // equals navbar__home font-size
 
       @include respond(small-phone) {
         width: 2.7rem;
