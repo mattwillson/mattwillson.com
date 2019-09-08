@@ -88,11 +88,11 @@ body {
     }
 
     &:hover {
-      color: $color-secondary;
+      color: $color-primary;
     }
 
     &:active {
-      color: $color-primary;
+      color: $color-secondary;
     }
 
     @include respond(desktop) {
